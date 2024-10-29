@@ -1,5 +1,6 @@
 <template>
   <div>
-    hh
+    <BaseHeader/>
+    <BaseFooter />
   </div>
 </template>
