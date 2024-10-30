@@ -1,10 +1,10 @@
 import type { ExperienceDetail } from '@/types/experiences'
-import artile1 from '@/assets/elvin11.png'
-import russie from '@/assets/russie.png'
-import france from '@/assets/france.png'
-import camroun from '@/assets/cameroun.avif'
-import spain from '@/assets/espagne.jpeg'
-import rdc from '@/assets/lubumbashi.jpg'
+import artile1 from '@/assets/images/elvin11.png'
+import russie from '@/assets/images/russie.png'
+import france from '@/assets/images/france.png'
+import camroun from '@/assets/images/cameroun.avif'
+import spain from '@/assets/images/espagne.jpeg'
+import rdc from '@/assets/images/lubumbashi.jpg'
 
 // Efficient Outsource SRL (Russia)
 export const Efficient: ExperienceDetail = {
