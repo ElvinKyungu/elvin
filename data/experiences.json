@@ -1,0 +1,32 @@
+[
+  {
+    "date": "July - October",
+    "title": "Efficient Outsource SRL",
+    "description": ["At Efficient Outsource SRL, I developed a microfinance dashboard, enhancing the user experience and backend integration for smooth financial operations."],
+    "isLast": false
+  },
+  {
+    "date": "March 2024 - May 2024",
+    "title": "Atlantic Zone",
+    "description": ["I built a device tracking app at Atlantic Zone, ensuring real-time data management and notification systems for seamless operations."],
+    "isLast": false
+  },
+  {
+    "date": "July 2023 - April 2024",
+    "title": "Soixante Circuits",
+    "description": ["At Soixante Circuits, I worked on high-profile projects like Garden-Map with Google and Michael Kors, focusing on frontend development and Google Maps integration."],
+    "isLast": false
+  },
+  {
+    "date": "January 2024 - June 2023",
+    "title": "Bayamo",
+    "description": ["At Bayamo, I helped build a scalable dropshipping platform, optimizing transactions and inventory management for smoother user experiences."],
+    "isLast": false
+  },
+  {
+    "date": "November 2022 - March 2023",
+    "title": "Lushitrap",
+    "description": ["I developed a music streaming and download app for Lushitrap, improving the download flow and content recommendations for a better user experience."],
+    "isLast": true
+  }
+]
