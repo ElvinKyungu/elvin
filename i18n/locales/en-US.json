@@ -1,0 +1,30 @@
+{
+  "home_title": "Hi, I'm Elvin, but you can call me Elvin Code :)",
+  "home_description": "m a frontend developer passionate about transforming ideas into sleek, intuitive digital experiences. With a deep love for remote work, I thrive in flexible environments where creativity and efficiency meet. I specialize in Vue.js",
+  "home_card_animate_title": "Fueled by a passion for frontend development, I bring modern, responsive, and dynamic web applications to life. With expertise in Vue.js, Nuxt.js, and TailwindCSS, I craft seamless and high-performing user experiences. Ready to unlock new possibilities? Let’s build something remarkable together.",
+  
+  "first_wallet_vision": "Your Vision",
+  "first_wallet_expertise": "My expertise",
+  "first_wallet_title":"Let me bring your projects to life",
+  "first_wallet_description": "Together, we can transform your ideas into concrete, high-performance solutions. Whether it's creating modern interfaces or intuitive user experiences, I'm with you every step of the way to bring your ambitions to life.",
+  "first_wallet_btn": "Start your project now",
+  
+  "second_wallet_vision": "My Services",
+  "second_wallet_expertise": "Let's Collaborate",
+  "second_wallet_title":"What Do I Do?",
+  "second_wallet_description": "I specialize in creating stunning, user-centered web interfaces, Progressive Web Apps (PWAs), and dynamic animations using GSAP. I integrate seamless API connections, ensure excellent performance, and provide comprehensive SEO optimization to help you stand out.",
+  "second_wallet_btn": "Start your project now",
+
+  "home_stack_title": "Building Innovative Digital Experiences",
+  "home_stack_description": "As a frontend developer, I craft sleek, interactive web applications, using Vue.js for its reactivity and simplicity to build precise, dynamic user experiences.",
+  "home_stack_card_title": "Stack",
+  "home_stack_blue_card": "TailwindCSS for responsive elegance",
+  "home_stack_black_card":"Mastering the art of Vue.js",
+  
+  "home_testimonail": {
+    "gabriel":{
+      "message": "I had the privilege of recruiting Elvin a year and a half ago. Since then, he has demonstrated remarkable growth, consistently delivering elegant and impactful user interfaces. He is a highly skilled and well-rounded frontend developer, with both creativity and technical expertise.",
+      "title": "Cofounder at @Capte"
+    }
+  }
+}
