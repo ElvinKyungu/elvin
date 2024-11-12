@@ -20,11 +20,63 @@
   "home_stack_card_title": "Stack",
   "home_stack_blue_card": "TailwindCSS for responsive elegance",
   "home_stack_black_card":"Mastering the art of Vue.js",
-  
-  "home_testimonail": {
-    "gabriel":{
-      "message": "I had the privilege of recruiting Elvin a year and a half ago. Since then, he has demonstrated remarkable growth, consistently delivering elegant and impactful user interfaces. He is a highly skilled and well-rounded frontend developer, with both creativity and technical expertise.",
-      "title": "Cofounder at @Capte"
+
+  "home_testimonail": [
+    {
+      "gabriel": {
+        "message": "I had the privilege of recruiting Elvin a year and a half ago. Since then, he has demonstrated remarkable growth, consistently delivering elegant and impactful user interfaces. He is a highly skilled and well-rounded frontend developer, with both creativity and technical expertise.",
+        "name": "Gabriel Delattre",
+        "title": "Cofounder at @Capte"
+      }
+    },
+    {
+      "patrick": {
+        "message": "I had the pleasure of teaching Elvin programming at university, and from the start, I recognized his exceptional potential. Today, he has become one of the best frontend developers, combining creativity with technical expertise. I highly recommend him for any opportunity!",
+        "name": "Patrick Mukala",
+        "title": "Professor at the University of Lubumbashi"
+      }
+    },
+    {
+      "kevin": {
+        "message": "At Soixante Circuits, Elvin quickly stood out for his ability to turn complex challenges into sleek solutions. He excels in front-end technologies while adding his creative flair to each project. Fast, efficient, and detail-oriented, he's a valuable asset to any team.",
+        "name": "Kevin Maginot",
+        "title": "Interactive & immersive experience architect"
+      }
+    },
+    {
+      "eric": {
+        "message": "I have worked with Elvin on several projects where he stood out for his professionalism, passion for frontend development, and proactive approach. He excels in modern technologies, shows initiative, and offers innovative solutions. His enthusiasm and adaptability make him a valuable asset to any team.",
+        "name": "Eric Ampire",
+        "title": "iOS & Android Engineer at BRP"
+      }
+    },
+    {
+      "katya": {
+        "message": "I highly recommend Elvin Kyungu, an excellent frontend developer. He creates aesthetic and functional interfaces with remarkable attention to detail. His ability to collaborate and deliver quickly makes him a valuable asset to any team.",
+        "name": "Katya Kurkubet",
+        "title": "Frontend developer"
+      }
+    },
+    {
+      "valeriu": {
+        "message": "I worked with Elvin on a project for my company Atlantic Zone, and was very pleased with the quality of his work. He's an excellent front-end web developer.",
+        "name": "Valeriu Stinca",
+        "title": "CEO at @Atlantic Zone"
+      }
     }
-  }
+  ],
+
+  "contact_first_title": "Do you have any questions ?",
+  "contact_second_title": "or would you like to get in touch with me? I will take the time to answer you as soon as possible.",
+  "contact_paragraph": "Get in Touch to work with me",
+  "contact_first_title_card": "Phone Number",
+  "contact_second_title_card": "Mail Address",
+  "contact_third_title_card": "Social Network",
+
+  "header_links":[
+    "About",
+    "Experiences",
+    "Articles",
+    "Conferences"
+  ]
 }
