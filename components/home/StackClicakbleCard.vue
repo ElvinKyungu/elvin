@@ -127,11 +127,11 @@ const openDocumentation = () => {
     <div class="col-span-12 md:col-span-6 relative z-30">
       <div class="flex flex-col justify-between w-full h-full">
         <h1 ref="titleRef1" class="text-5xl">
-          Building Innovative Digital Experiences
+          {{ $t('home_stack_title')}}
         </h1>
         <div class="grid my-10 md:mt-5 grid-cols-12 md:flex justify-between gap-2 md:gap-5 items-center">
           <p ref="paragraphRef1" class="w-full col-span-8">
-            As a frontend developer, I craft sleek, interactive web applications, using Vue.js for its reactivity and simplicity to build precise, dynamic user experiences.
+            {{ $t('home_stack_description')}}
           </p>
           <div ref="titleRef2" class="h-[1px] col-span-4 bg-white w-full"></div>
         </div>
@@ -143,20 +143,20 @@ const openDocumentation = () => {
         <div class="col-span-2 hidden md:block"></div>
         <div ref="cardRef1" class="col-span-6 md:col-span-5 bg-black text-white p-5 h-32 rounded-md">
           <div ref="paragraphRef2" class="flex justify-between w-full">
-            <span>Mastering the art of Vue.js</span>
+            <span>{{ $t('home_stack_black_card')}}</span>
             <IconsIconRight class="text-white"/>
           </div>
         </div>
         <div ref="cardRef2" class="col-span-6 md:col-span-5 bg-blue-500 text-white p-5 h-32 rounded-md">
           <div ref="paragraphRef3" class="flex justify-between w-full">
-            <span>TailwindCSS for responsive elegance</span>
+            <span>{{ $t('home_stack_blue_card')}}</span>
             <IconsIconRight/>
           </div>
         </div>
       </div>
   
       <div ref="cardRef3" class="grid grid-cols-12 border border-[#616161] mt-5 p-5 rounded-lg md:p-5">
-        <div ref="paragraphRef4" class="text-lg uppercase col-span-2">My stack</div>
+        <div ref="paragraphRef4" class="text-lg uppercase col-span-2">{{ $t('home_stack_card_title')}}</div>
         <div class="col-span-12 md:col-span-10">
           <section class="flex justify-center flex-col items-center w-full relative z-0">
             <div class="grid grid-cols-12 gap-5 relative w-full h-full">
@@ -209,7 +209,6 @@ const openDocumentation = () => {
       </div>
     </div>
   </section>
-  
 </template>
 <style>
 

@@ -6,7 +6,6 @@ const { setLocale } = useI18n()
 
 <template>
   <main>
-    
     <!-- <div>
       <div>
         <div class="flex gap-5">

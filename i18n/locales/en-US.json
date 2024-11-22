@@ -1,6 +1,7 @@
 {
   "home_title": "Hi, I'm Elvin, but you can call me Elvin Code :)",
-  "home_description": "m a frontend developer passionate about transforming ideas into sleek, intuitive digital experiences. With a deep love for remote work, I thrive in flexible environments where creativity and efficiency meet. I specialize in Vue.js",
+  "home_description": "As a frontend developer passionate about transforming ideas into sleek, intuitive digital experiences. With a deep love for remote work, I thrive in flexible environments where creativity and efficiency meet. I specialize in Vue.js",
+  "home_second_title": "I am a developer based on vuejs",
   "home_card_animate_title": "Fueled by a passion for frontend development, I bring modern, responsive, and dynamic web applications to life. With expertise in Vue.js, Nuxt.js, and TailwindCSS, I craft seamless and high-performing user experiences. Ready to unlock new possibilities? Let’s build something remarkable together.",
   
   "first_wallet_vision": "Your Vision",
@@ -21,48 +22,43 @@
   "home_stack_blue_card": "TailwindCSS for responsive elegance",
   "home_stack_black_card":"Mastering the art of Vue.js",
 
-  "home_testimonail": [
+  "home_title_testimonial": "Testimonials",
+  "home_testimonials": [
     {
-      "gabriel": {
-        "message": "I had the privilege of recruiting Elvin a year and a half ago. Since then, he has demonstrated remarkable growth, consistently delivering elegant and impactful user interfaces. He is a highly skilled and well-rounded frontend developer, with both creativity and technical expertise.",
-        "name": "Gabriel Delattre",
-        "title": "Cofounder at @Capte"
-      }
+      "image": "./gabriel.jpeg",
+      "message": "I had the privilege of recruiting Elvin a year and a half ago. Since then, he has demonstrated remarkable growth, consistently delivering elegant and impactful user interfaces. He is a highly skilled and well-rounded frontend developer, with both creativity and technical expertise.",
+      "name": "Gabriel Delattre",
+      "title": "Cofounder at Capte"
     },
     {
-      "patrick": {
-        "message": "I had the pleasure of teaching Elvin programming at university, and from the start, I recognized his exceptional potential. Today, he has become one of the best frontend developers, combining creativity with technical expertise. I highly recommend him for any opportunity!",
-        "name": "Patrick Mukala",
-        "title": "Professor at the University of Lubumbashi"
-      }
+      "image": "./pro-patrick.jpeg",
+      "message": "I had the pleasure of teaching Elvin programming at university, and from the start, I recognized his exceptional potential. Today, he has become one of the best frontend developers, combining creativity with technical expertise. I highly recommend him for any opportunity!",
+      "name": "Patrick Mukala",
+      "title": "Professor at the University of Lubumbashi"
     },
     {
-      "kevin": {
-        "message": "At Soixante Circuits, Elvin quickly stood out for his ability to turn complex challenges into sleek solutions. He excels in front-end technologies while adding his creative flair to each project. Fast, efficient, and detail-oriented, he's a valuable asset to any team.",
-        "name": "Kevin Maginot",
-        "title": "Interactive & immersive experience architect"
-      }
+      "image": "./kevin.jpeg",
+      "message": "At Soixante Circuits, Elvin quickly stood out for his ability to turn complex challenges into sleek solutions. He excels in front-end technologies while adding his creative flair to each project. Fast, efficient, and detail-oriented, he's a valuable asset to any team.",
+      "name": "Kevin Maginot",
+      "title": "Interactive & immersive experience architect"
     },
     {
-      "eric": {
-        "message": "I have worked with Elvin on several projects where he stood out for his professionalism, passion for frontend development, and proactive approach. He excels in modern technologies, shows initiative, and offers innovative solutions. His enthusiasm and adaptability make him a valuable asset to any team.",
-        "name": "Eric Ampire",
-        "title": "iOS & Android Engineer at BRP"
-      }
+      "image":"./eric.jpeg",
+      "message": "I have worked with Elvin on several projects where he stood out for his professionalism, passion for frontend development, and proactive approach. He excels in modern technologies, shows initiative, and offers innovative solutions. His enthusiasm and adaptability make him a valuable asset to any team.",
+      "name": "Eric Ampire",
+      "title": "iOS & Android Engineer at BRP"
     },
     {
-      "katya": {
-        "message": "I highly recommend Elvin Kyungu, an excellent frontend developer. He creates aesthetic and functional interfaces with remarkable attention to detail. His ability to collaborate and deliver quickly makes him a valuable asset to any team.",
-        "name": "Katya Kurkubet",
-        "title": "Frontend developer"
-      }
+      "image": "./kat.jpg",
+      "message": "I highly recommend Elvin Kyungu, an excellent frontend developer. He creates aesthetic and functional interfaces with remarkable attention to detail. His ability to collaborate and deliver quickly makes him a valuable asset to any team.",
+      "name": "Katya Kurkubet",
+      "title": "Frontend developer"
     },
     {
-      "valeriu": {
-        "message": "I worked with Elvin on a project for my company Atlantic Zone, and was very pleased with the quality of his work. He's an excellent front-end web developer.",
-        "name": "Valeriu Stinca",
-        "title": "CEO at @Atlantic Zone"
-      }
+      "image": "./user.jpg",
+      "message": "I worked with Elvin on a project for my company Atlantic Zone, and was very pleased with the quality of his work. He's an excellent front-end web developer.",
+      "name": "Valeriu Stinca",
+      "title": "CEO at Atlantic Zone"
     }
   ],
 
@@ -78,5 +74,7 @@
     "Experiences",
     "Articles",
     "Conferences"
-  ]
+  ],
+
+  "copyright_footer": "© 2024 Elvin Code All Rights Reserved."
 }
