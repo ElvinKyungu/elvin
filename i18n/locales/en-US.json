@@ -1,18 +1,18 @@
 {
   "home_title": "Hi, I'm Elvin, but you can call me Elvin Code :)",
-  "home_description": "As a frontend developer passionate about transforming ideas into sleek, intuitive digital experiences. With a deep love for remote work, I thrive in flexible environments where creativity and efficiency meet. I specialize in Vue.js",
-  "home_second_title": "I am a developer based on vuejs",
+  "home_description": "As a frontend developer passionate about transforming ideas into sleek, intuitive digital experiences. With a deep love for remote work, I thrive in flexible environments where creativity and efficiency meet. I specialize in Vue.js.",
+  "home_second_title": "I am a developer specializing in Vue.js",
   "home_card_animate_title": "Fueled by a passion for frontend development, I bring modern, responsive, and dynamic web applications to life. With expertise in Vue.js, Nuxt.js, and TailwindCSS, I craft seamless and high-performing user experiences. Ready to unlock new possibilities? Let’s build something remarkable together.",
   
   "first_wallet_vision": "Your Vision",
-  "first_wallet_expertise": "My expertise",
-  "first_wallet_title":"Let me bring your projects to life",
+  "first_wallet_expertise": "My Expertise",
+  "first_wallet_title": "Let me bring your projects to life",
   "first_wallet_description": "Together, we can transform your ideas into concrete, high-performance solutions. Whether it's creating modern interfaces or intuitive user experiences, I'm with you every step of the way to bring your ambitions to life.",
   "first_wallet_btn": "Start your project now",
   
   "second_wallet_vision": "My Services",
   "second_wallet_expertise": "Let's Collaborate",
-  "second_wallet_title":"What Do I Do?",
+  "second_wallet_title": "What Do I Do?",
   "second_wallet_description": "I specialize in creating stunning, user-centered web interfaces, Progressive Web Apps (PWAs), and dynamic animations using GSAP. I integrate seamless API connections, ensure excellent performance, and provide comprehensive SEO optimization to help you stand out.",
   "second_wallet_btn": "Start your project now",
 
@@ -20,7 +20,7 @@
   "home_stack_description": "As a frontend developer, I craft sleek, interactive web applications, using Vue.js for its reactivity and simplicity to build precise, dynamic user experiences.",
   "home_stack_card_title": "Stack",
   "home_stack_blue_card": "TailwindCSS for responsive elegance",
-  "home_stack_black_card":"Mastering the art of Vue.js",
+  "home_stack_black_card": "Mastering the art of Vue.js",
 
   "home_title_testimonial": "Testimonials",
   "home_testimonials": [
@@ -31,7 +31,7 @@
       "title": "Cofounder at Capte"
     },
     {
-      "image": "./pro-patrick.jpeg",
+      "image": "./prof-patrick.jpeg",
       "message": "I had the pleasure of teaching Elvin programming at university, and from the start, I recognized his exceptional potential. Today, he has become one of the best frontend developers, combining creativity with technical expertise. I highly recommend him for any opportunity!",
       "name": "Patrick Mukala",
       "title": "Professor at the University of Lubumbashi"
@@ -43,7 +43,7 @@
       "title": "Interactive & immersive experience architect"
     },
     {
-      "image":"./eric.jpeg",
+      "image": "./eric.jpeg",
       "message": "I have worked with Elvin on several projects where he stood out for his professionalism, passion for frontend development, and proactive approach. He excels in modern technologies, shows initiative, and offers innovative solutions. His enthusiasm and adaptability make him a valuable asset to any team.",
       "name": "Eric Ampire",
       "title": "iOS & Android Engineer at BRP"
@@ -62,21 +62,85 @@
     }
   ],
 
-  "contact_first_title": "Do you have any questions ?",
-  "contact_second_title": "or would you like to get in touch with me? I will take the time to answer you as soon as possible.",
+  "contact_first_title": "Do you have any questions?",
+  "contact_second_title": "Or would you like to get in touch with me? I will take the time to answer you as soon as possible.",
   "contact_paragraph": "Get in Touch to work with me",
   "contact_first_title_card": "Phone Number",
   "contact_second_title_card": "Mail Address",
   "contact_third_title_card": "Social Network",
 
-  "header_links":[
-    "About",
-    "Experiences",
-    "Articles",
-    "Conferences"
+  "header_links": [
+    { "label": "About", "url": "/about" },
+    { "label": "Experiences", "url": "/experiences" },
+    { "label": "Articles", "url": "/articles" },
+    { "label": "Conferences", "url": "/conferences" }
   ],
 
   "about_gallery_title": "Gallery",
-  
+ 
+  "conferences": [
+    {
+      "title":"A passion for tech as a lever...",
+      "images": "2024",
+      "year": ""
+    },
+    {
+      "title":"Community development drives...",
+      "images": "",
+      "year": "2022"
+    },
+
+    {
+      "title":"Economic, environmental, durability...",
+      "images": "",
+      "year": "2023"
+    }, 
+    {
+      "title":"Concours solution",
+      "images": "",
+      "year": "2024"
+    },
+    {
+      "title":"Devfest student edition",
+      "images": "",
+      "year": "2023"
+    },
+    {
+      "title":"Soft Day 2024",
+      "images": "",
+      "year": "2024"
+    },
+    {
+      "title":"Evangelization tour",
+      "images": "",
+      "year": "2024"
+    },
+    {
+      "title":"Frontend web development contest",
+      "images": "",
+      "year": "2022"
+    },
+    {
+      "title":"Artificial intelligence in DRC",
+      "images": "",
+      "year": "2023"
+    },
+    {
+      "title":"Young people in digital",
+      "images": "",
+      "year": "2022"
+    },
+    {
+      "title":"Devfest GDG Lubumbashi",
+      "images": "",
+      "year": "2024"
+    },
+    {
+      "title":"Devfest GDG Lubumbashi",
+      "images": "",
+      "year": "2023"
+    }
+  ],
+
   "copyright_footer": "© 2024 Elvin Code All Rights Reserved."
 }

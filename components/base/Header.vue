@@ -1,9 +1,12 @@
 <script setup lang="ts">
 import gsap from "gsap"
 
+const { locale } = useI18n()
+
 const isMenuOpen = ref(false)
 const showLanguagePopup = ref(false)
 const toggleLanguagePopup = useToggle(showLanguagePopup)
+
 
 function open_menu() {
   isMenuOpen.value = true
@@ -98,6 +101,11 @@ onClickOutside(languagePopupRef, () => {
   if (showLanguagePopup.value) toggleLanguagePopup(false)
 })
 
+const setLanguage = (lang: 'en' | 'fr') => {
+  locale.value = lang
+  showLanguagePopup.value = false
+}
+
 </script>
 
 <template>
@@ -151,8 +159,18 @@ onClickOutside(languagePopupRef, () => {
                   bg-[#222] backdrop-blur-3xl border borderg p-3 border-[#666666] rounded shadow-lg
                 "
               >
-                <p class="text-white cursor-pointer hover:text-green-500">French</p>
-                <p class="text-white cursor-pointer hover:text-green-500">English</p>
+                <p
+                  class="text-white cursor-pointer hover:text-green-500"
+                  @click="setLanguage('fr')"
+                >
+                  French
+                </p>
+                <p
+                  class="text-white cursor-pointer hover:text-green-500"
+                  @click="setLanguage('en')"
+                >
+                  English
+                </p>
               </div>
             </li>
             <li @click="open_menu" class="md:border-b-4 cursor-pointer py-3 border-transparent">
