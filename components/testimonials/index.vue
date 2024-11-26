@@ -2,7 +2,7 @@
 import { useParagraphAnimation } from '@/composables/useParagraphAnimation'
 
 
-const { rt, t, tm, messages } = useI18n()
+const { rt, t, tm } = useI18n()
 
 const testimonials = tm("home_testimonials")
 console.log(testimonials)
