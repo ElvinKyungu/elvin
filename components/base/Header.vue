@@ -1,7 +1,12 @@
 <script setup lang="ts">
 import gsap from "gsap"
 
+const { locale } = useI18n()
+
 const isMenuOpen = ref(false)
+const showLanguagePopup = ref(false)
+const toggleLanguagePopup = useToggle(showLanguagePopup)
+
 
 function open_menu() {
   isMenuOpen.value = true
@@ -78,6 +83,29 @@ const leave = (event: MouseEvent) => {
   const icon = (event.currentTarget as HTMLElement).querySelector('.icon')
   gsap.to(icon, { opacity: 0, x: -20, duration: 0.2, ease: 'power2.in' })
 }
+
+const showPopup = () => {
+  toggleLanguagePopup()
+  if (showLanguagePopup.value) {
+    gsap.fromTo(
+      ".language-popup",
+      { opacity: 0, y: -10 },
+      { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }
+    )
+  }
+}
+
+const languagePopupRef = ref(null)
+
+onClickOutside(languagePopupRef, () => {
+  if (showLanguagePopup.value) toggleLanguagePopup(false)
+})
+
+const setLanguage = (lang: 'en' | 'fr') => {
+  locale.value = lang
+  showLanguagePopup.value = false
+}
+
 </script>
 
 <template>
@@ -94,7 +122,7 @@ const leave = (event: MouseEvent) => {
           <router-link to="/" class="text-3xl text-green-500">Elvin Code</router-link>
         </li>
         <li class="relative">
-          <ul class="flex space-x-10">
+          <ul class="flex space-x-7">
             <li class="cursor-pointer hidden md:flex">
               <ul class="flex space-x-7 text-lg">
                 <li class="border-b-4 py-3 border-transparent">
@@ -118,6 +146,32 @@ const leave = (event: MouseEvent) => {
                   </a>
                 </li>
               </ul>
+            </li>
+            <li class="border-b-4 py-3 border-transparent relative">
+              <a @click="showPopup">
+                <IconsIconTranslate class="w-7 h-7 text-white cursor-pointer"/>
+              </a>
+              <div 
+                v-if="showLanguagePopup"
+                ref="languagePopupRef"
+                class="
+                  language-popup absolute top-full 
+                  bg-[#222] backdrop-blur-3xl border borderg p-3 border-[#666666] rounded shadow-lg
+                "
+              >
+                <p
+                  class="text-white cursor-pointer hover:text-green-500"
+                  @click="setLanguage('fr')"
+                >
+                  French
+                </p>
+                <p
+                  class="text-white cursor-pointer hover:text-green-500"
+                  @click="setLanguage('en')"
+                >
+                  English
+                </p>
+              </div>
             </li>
             <li @click="open_menu" class="md:border-b-4 cursor-pointer py-3 border-transparent">
               <IconsIconBars class="text-white w-8 h-8 relative z-10"/>
@@ -207,4 +261,5 @@ const leave = (event: MouseEvent) => {
   height: 20rem;
   z-index: 99999;
 } 
+
 </style>

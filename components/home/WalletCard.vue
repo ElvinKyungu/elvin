@@ -55,23 +55,23 @@ onMounted(() => {
       <div class="absolute z-0 inset-0 h-full w-full bg-[radial-gradient(theme(colors.green.300)_1px,transparent_1px)] [background-size:16px_16px]"></div>
       <div class="relative z-20 text-black h-full">
         <div class="text-xs uppercase flex justify-between">
-          <p ref="textRef1">Your Vision</p>
-          <p ref="textRef2">My Expertise</p>
+          <p ref="textRef1">{{ $t('first_wallet_vision') }}</p>
+          <p ref="textRef2">{{ $t('first_wallet_expertise') }}</p>
         </div>
         <div class="w-full md:max-w-[30rem] my-auto mt-28 mx-auto">
           <h1 ref="titleRef1" class="text-2xl md:text-3xl lg:text-5xl">
-            Let me bring your projects to life
+            {{ $t('first_wallet_title') }}
           </h1>
           <p ref="paragraphRef1" class="mt-2 md:mt-10">
-            Together, we can transform your ideas into concrete, high-performance solutions. Whether it's creating modern interfaces or intuitive user experiences, I'm with you every step of the way to bring your ambitions to life.
+            {{ $t('first_wallet_description') }}
           </p>
         </div>
         <div 
           class="md:bottom-5 rounded-lg bottom-0 justify-end items-end w-[95%] md:w-1/2 mx-auto bg-white text-black cursor-pointer absolute p-5 md:p-5 right-[2.5%]"
         >
           <a href="#contact">
-            <div class="flex justify-between">
-              <span class="text-sm md:text-sm">Start your project now</span>
+            <div class="flex justify-between items-center">
+              <span class="text-sm md:text-sm">{{ $t('first_wallet_btn') }}</span>
               <IconsIconArrowGrowUp/>
             </div>
           </a>
@@ -82,24 +82,24 @@ onMounted(() => {
       <div class="absolute z-0 inset-0 h-full w-full bg-[radial-gradient(theme(colors.green.300)_1px,transparent_1px)] [background-size:16px_16px]"></div>
       <div class="relative z-20 h-full">
         <div class="text-xs uppercase flex justify-between">
-          <p ref="textRef3">My Services</p>
-          <p ref="textRef4">Let's Collaborate</p>
+          <p ref="textRef3">{{ $t('second_wallet_vision') }}</p>
+          <p ref="textRef4">{{ $t('second_wallet_expertise') }}</p>
         </div>
         <div class="w-full md:max-w-[30rem] my-auto mt-28 mx-auto">
           <h1 ref="titleRef2" class="text-2xl md:text-3xl lg:text-5xl -mt-10 md:mt-0">
-            What Do I Do?
+            {{ $t('second_wallet_title') }}
           </h1>
           <p ref="paragraphRef2" class="mt-5 md:mt-10">
-            I specialize in creating stunning, user-centered web interfaces, Progressive Web Apps (PWAs), and dynamic animations using GSAP. I integrate seamless API connections, ensure excellent performance, and provide comprehensive SEO optimization to help you stand out.
+            {{ $t('second_wallet_description') }}
           </p>
         </div>
         <div 
           class="md:bottom-5 cursor-pointer bg-black rounded-lg bottom-0 justify-end items-end w-[95%] md:w-1/2 mx-auto text-white absolute p-5 md:p-5 right-[2.5%]"
         >
           <a href="#contact">
-            <div class="flex justify-between">
-              <span class="text-sm md:text-sm">Start your project</span>
-              <IconArrowGrowUp class=" "/>
+            <div class="flex justify-between items-center">
+              <span class="text-sm md:text-sm">{{ $t('second_wallet_btn') }}</span>
+              <IconArrowGrowUp class="text-white"/>
             </div>
           </a>
         </div>

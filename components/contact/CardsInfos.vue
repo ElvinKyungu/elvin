@@ -12,7 +12,7 @@ useTitleAnimation(cardsRef, 0.4)
 
     <div class="relative z-10 col-span-12 md:col-span-4 p-5 bg-white/5 cursor-pointer hover:bg-white/10 transition rounded-md">
       <div class="flex justify-center flex-col items-center space-y-3">
-        <h1 class="text-xl">Phone Number</h1>
+        <h1 class="text-xl">{{ $t('contact_first_title_card') }}</h1>
         <ul class="space-y-3">
           <li><a href="tel:+243846899101" class="hover:border-b transition">+243 846 899 101</a></li>
           <li><a href="https://wa.me/243995555480" target="_blank" class="hover:border-b transition">+243 995 555 480 (WhatsApp)</a></li>
@@ -21,7 +21,7 @@ useTitleAnimation(cardsRef, 0.4)
     </div>
     <div class="relative z-10 col-span-12 md:col-span-4 p-5 bg-white/5 cursor-pointer hover:bg-white/10 transition rounded-md">
       <div class="flex justify-center flex-col items-center space-y-3">
-        <h1 class="text-xl">Mail Address</h1>
+        <h1 class="text-xl">{{ $t('contact_second_title_card') }}</h1>
         <ul class="space-y-3">
           <li><a href="mailto:elvinkyungu.75@gmail.com" class="hover:border-b transition">elvinkyungu.75@gmail.com</a></li>
         </ul>
@@ -30,7 +30,7 @@ useTitleAnimation(cardsRef, 0.4)
 
     <div class="relative z-10 col-span-12 md:col-span-4 p-5 bg-white/5 cursor-pointer hover:bg-white/10 transition rounded-md">
       <div class="flex justify-center flex-col items-center space-y-3">
-        <h1 class="text-xl">Social Network</h1>
+        <h1 class="text-xl">{{ $t('contact_third_title_card') }}</h1>
         <ul class="space-y-3">
           <li><a href="https://www.instagram.com/elvin.kyungu/" target="_blank" class="hover:border-b transition">Instagram</a></li>
           <li><a href="https://www.linkedin.com/in/elvin-kyungu/" target="_blank" class="hover:border-b transition">LinkedIn</a></li>
