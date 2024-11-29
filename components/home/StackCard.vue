@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import gsap from 'gsap'
-import vuejs from '@/assets/images/vuejs.png'
+import vuejs from '@/assets/images/vuejs.jpg'
 import nuxt from '@/assets/images/nuxt.svg'
-import ts from '@/assets/images/typescript.png'
+import ts from '@/assets/images/typescript.jpg'
 
 const titleRef = ref<HTMLElement | null>(null)
 const paragraphRef = ref<HTMLElement | null>(null)

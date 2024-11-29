@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import experiences from '@/data/experiences.json'
 import gsap from 'gsap'
 import { 
   Efficient,
@@ -11,6 +10,10 @@ import {
 import type { ExperienceDetail } from '@/types/experiences'
 import { useTitleAnimation } from '@/composables/useTitleAnimation'
 import { useParagraphAnimation } from '@/composables/useParagraphAnimation'
+
+const { rt, t, tm } = useI18n()
+
+const experiences = tm("experiences")
 
 const titleRef1 = ref<HTMLElement | null>(null)
 const titleRef2 = ref<HTMLElement | null>(null)
@@ -44,6 +47,8 @@ const selectedExperience = ref(Efficient)
 const activeExperienceTitle = ref(experiences[0].title) 
 
 function getExperienceDetails(title: string): ExperienceDetail {
+  console.log(title);
+  
   switch (title) {
     case 'Bayamo':
       return bayamo
@@ -101,18 +106,18 @@ onMounted(() => {
       ></div> 
       <section ref="cardHistory" class="py-4 flex justify-center w-full relative z-0 mt-20">
         <main class="px-5 w-full relative">
-          <h1 class="my-10 text-5xl">Experiences</h1>
+          <h1 class="my-10 text-5xl">{{ t('experience_title')}}</h1>
           <div class="relative pb-7 rounded-xl">
             <div class="grid grid-cols-12 md:space-x-10 lg:space-x-20">
               <div class=" col-span-12 md:col-span-5">
                 <Experiences
                   v-for="(experience, index) in experiences"
                   :key="index"
-                  :date="experience.date"
-                  :title="experience.title"
-                  :description="experience.description"
+                  :date="rt(experience.date)"
+                  :title="rt(experience.title)"
+                  :description="rt(experience.description)"
                   :isLast="experience.isLast"
-                  @click="selectExperience(getExperienceDetails(experience.title))"
+                  @click="selectExperience(getExperienceDetails(rt(experience.title)))"
                 >
                   <template #icon>
                     <IconsIconCheck />
@@ -134,7 +139,6 @@ onMounted(() => {
     <BaseFooter />
   </div>
 </template>
-
 
 <style>
 .img-culture{

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { ExperienceDetail } from '@/types/experiences'
 import gsap from 'gsap'
+import Experiences from '~/pages/experiences.vue';
 
 defineProps<{
   experiences: ExperienceDetail
@@ -48,6 +49,8 @@ watch(activeHistoryType, async () => {
 
 onMounted(() => {
   triggerAnimations()
+  console.log(Experiences);
+  
 })
 </script>
 

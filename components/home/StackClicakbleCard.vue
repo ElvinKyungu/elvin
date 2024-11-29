@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import {gsap} from 'gsap'
-import vuejs from "@/assets/images/vuejs.png"
+import vuejs from "@/assets/images/vuejs.jpg"
 import tailwind from "@/assets/images/tailwindcss.jpg"
-import ts from "@/assets/images/typescript.png"
+import ts from "@/assets/images/typescript.jpg"
 import unocss from '@/assets/images/unocss.svg'
 import gsapImg from '@/assets/images/gsap.jpg'
-import js from '@/assets/images/js.png'
+import js from '@/assets/images/js.jpg'
 import nuxtImg from '@/assets/images/nuxt.svg'
 import { useTitleAnimation } from '@/composables/useTitleAnimation'
 import { useParagraphAnimation } from '@/composables/useParagraphAnimation'
