@@ -25,25 +25,25 @@
   "home_title_testimonial": "Testimonials",
   "home_testimonials": [
     {
-      "image": "./gabriel.jpeg",
+      "image": "./gabriel.jpg",
       "message": "I had the privilege of recruiting Elvin a year and a half ago. Since then, he has demonstrated remarkable growth, consistently delivering elegant and impactful user interfaces. He is a highly skilled and well-rounded frontend developer, with both creativity and technical expertise.",
       "name": "Gabriel Delattre",
       "title": "Cofounder at Capte"
     },
     {
-      "image": "./prof-patrick.jpeg",
+      "image": "./prof-patrick.jpg",
       "message": "I had the pleasure of teaching Elvin programming at university, and from the start, I recognized his exceptional potential. Today, he has become one of the best frontend developers, combining creativity with technical expertise. I highly recommend him for any opportunity!",
       "name": "Patrick Mukala",
       "title": "Professor at the University of Lubumbashi"
     },
     {
-      "image": "./kevin.jpeg",
+      "image": "./kevin.jpg",
       "message": "At Soixante Circuits, Elvin quickly stood out for his ability to turn complex challenges into sleek solutions. He excels in front-end technologies while adding his creative flair to each project. Fast, efficient, and detail-oriented, he's a valuable asset to any team.",
       "name": "Kevin Maginot",
       "title": "Interactive & immersive experience architect"
     },
     {
-      "image": "./eric.jpeg",
+      "image": "./eric.jpg",
       "message": "I have worked with Elvin on several projects where he stood out for his professionalism, passion for frontend development, and proactive approach. He excels in modern technologies, shows initiative, and offers innovative solutions. His enthusiasm and adaptability make him a valuable asset to any team.",
       "name": "Eric Ampire",
       "title": "iOS & Android Engineer at BRP"
@@ -181,7 +181,7 @@
   "experiencesDetails": [
     {
       "title": "Efficient Outsource SRL",
-      "image": "russie",
+      "image": "./russie.jpg",
       "description": "Developed a robust microfinance dashboard with a seamless UX and solid backend integration.",
       "learned": [
         {
@@ -191,7 +191,7 @@
         }
       ],
       "locatedCompany": {
-        "img": "russie",
+        "img": "./russie.jpg",
         "title": "Russia",
         "description": "Based in Russia, this project allowed me to refine my skills with a modern tech stack for finance solutions."
       }

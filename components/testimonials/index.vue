@@ -27,9 +27,5 @@ useParagraphAnimation(paragraphRef, 0.5)
         :user-title="rt(testimonial.title)"
       />
     </div>
-    <div>
-      hello
-      {{ $t('home_testimonials') }}
-    </div>
   </div>
 </template>

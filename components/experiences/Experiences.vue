@@ -17,15 +17,11 @@ defineProps({
     type: Boolean,
     default: false,
   },
-  isActive: { 
-    type: Boolean,
-    default: false,
-  },
 })
+
 </script>
 <template>
   <div
-    :class="{'bg-black/10': isActive}"
     class="flex flex-wrap cursor-pointer hover:bg-white/10 transition rounded-lg
     "
   >

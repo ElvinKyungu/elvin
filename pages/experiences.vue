@@ -1,80 +1,42 @@
 <script setup lang="ts">
 import gsap from 'gsap'
-import { 
-  Efficient,
-  atlanticZone,
-  soixanteCircuits,
-  bayamo,
-  lushitrap
-} from '@/data/experiencesDetails'
-import type { ExperienceDetail } from '@/types/experiences'
+
+import type { ExperienceDetail, Experience } from '@/types/experiences'
 import { useTitleAnimation } from '@/composables/useTitleAnimation'
-import { useParagraphAnimation } from '@/composables/useParagraphAnimation'
 
 const { rt, t, tm } = useI18n()
 
-const experiences = tm("experiences")
+const experiences = ref<Experience []>(tm("experiences"))
+console.log(experiences)
 
-const titleRef1 = ref<HTMLElement | null>(null)
-const titleRef2 = ref<HTMLElement | null>(null)
-const titleRef3= ref<HTMLElement | null>(null)
-const titleRef4 = ref<HTMLElement | null>(null)
-const imageRef4 = ref<HTMLElement | null>(null)
-const paragraphRef = ref<HTMLElement | null>(null)
-const cardsRef = ref<HTMLElement | null>(null)
+const [rawExperienceDetails]: ExperienceDetail[] = tm("experiencesDetails")
+
+console.log(rawExperienceDetails);
+
+
+// const activeExperienceTitle = ref(experiences.title) 
+
 const cardHistory = ref<HTMLElement | null>(null)
-const cultureRefTitle = ref<HTMLElement | null>(null)
-const cultureCardsRef = ref<HTMLElement | null>(null)
-const economicTitleRef = ref<HTMLElement | null>(null)
-const economicParagraphRef = ref<HTMLElement | null>(null)
-const economicCardImgRef = ref<HTMLElement | null>(null)
 
-useTitleAnimation(titleRef1, 0.5)
-useTitleAnimation(imageRef4, 1)
-useTitleAnimation(titleRef2, 0.5)
-useTitleAnimation(titleRef3, 0.5)
-useTitleAnimation(titleRef4, 1)
-useTitleAnimation(cardsRef, .5)
 useTitleAnimation(cardHistory, .5)
-useParagraphAnimation(paragraphRef, .5)
-useTitleAnimation(cultureRefTitle, .3)
-useParagraphAnimation(cultureCardsRef, .4)
-useParagraphAnimation(economicTitleRef, .3)
-useParagraphAnimation(economicParagraphRef, .4)
-useParagraphAnimation(economicCardImgRef, .2)
-// State to store the selected experience details
-const selectedExperience = ref(Efficient)
-const activeExperienceTitle = ref(experiences[0].title) 
 
-function getExperienceDetails(title: string): ExperienceDetail {
+function getExperienceDetails(title: string) {
   console.log(title);
-  
-  switch (title) {
-    case 'Bayamo':
-      return bayamo
-    case 'Lushitrap':
-      return lushitrap
-    case 'Soixante Circuits':
-      return soixanteCircuits
-    case 'Atlantic Zone':
-      return atlanticZone
-    case 'Efficient Outsource SRL':
-      return Efficient
-    default:
-      return Efficient
-  }
+  // return experiences.value.find((experience: Experience) => experience.title === title)
 }
 
 // Function to handle the animation sequence
-function selectExperience(experienceDetail:ExperienceDetail) {
+function selectExperience(experienceDetail) {
+  console.log( experienceDetail.title);
+
   gsap.to('.experience-details', {
     opacity: 0,
     duration: 0.5,
     ease: 'power2.inOut',
     onComplete() {
       // Change the content after fade out
-      selectedExperience.value = experienceDetail
-      activeExperienceTitle.value = experienceDetail.title
+      // selectedExperience = experienceDetail
+      // activeExperienceTitle = experienceDetail.title
 
       gsap.to('.experience-details', {
         opacity: 1,
@@ -109,25 +71,25 @@ onMounted(() => {
           <h1 class="my-10 text-5xl">{{ t('experience_title')}}</h1>
           <div class="relative pb-7 rounded-xl">
             <div class="grid grid-cols-12 md:space-x-10 lg:space-x-20">
-              <div class=" col-span-12 md:col-span-5">
+
+              <div v-if="experiences.length>0" class="col-span-12 md:col-span-5">
                 <Experiences
                   v-for="(experience, index) in experiences"
                   :key="index"
                   :date="rt(experience.date)"
                   :title="rt(experience.title)"
                   :description="rt(experience.description)"
-                  :isLast="experience.isLast"
-                  @click="selectExperience(getExperienceDetails(rt(experience.title)))"
-                >
+                  :isLast="false"
+                 >
                   <template #icon>
                     <IconsIconCheck />
                   </template>
                 </Experiences>
               </div>
               <div class="col-span-12 md:col-span-1"></div>
-              <div class="col-span-12 md:col-span-6 rounded-lg py-5 -mt-10 relative">
+              <div  class="col-span-12 md:col-span-6 rounded-lg py-5 -mt-10 relative">
                 <ExperiencesDetails 
-                  :experiences="selectedExperience" 
+                  :experiences="rawExperienceDetails"
                   class="experience-details"
                 />
               </div>

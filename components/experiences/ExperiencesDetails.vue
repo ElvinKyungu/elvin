@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import type { ExperienceDetail } from '@/types/experiences'
 import gsap from 'gsap'
-import Experiences from '~/pages/experiences.vue';
-
-defineProps<{
+const { rt } = useI18n()
+const props = defineProps<{
   experiences: ExperienceDetail
 }>()
 
@@ -49,15 +48,13 @@ watch(activeHistoryType, async () => {
 
 onMounted(() => {
   triggerAnimations()
-  console.log(Experiences);
-  
 })
 </script>
 
 <template>
   <div ref="rightPanel" class="">
     <div class="flex justify-between stagger-element my-5 lg:-mt-10">
-      <img :src="experiences.image" alt="" class="rounded-lg h-96 w-full object-cover cursor-pointer">
+      <img :src="rt(experiences.image)" alt="" class="rounded-lg h-96 w-full object-cover cursor-pointer">
     </div>
     <div class="relative">
       <div class="grid grid-cols-12 stagger-element">
@@ -77,9 +74,10 @@ onMounted(() => {
       </div>
     </div>
     <h1 class="mt-7 text-2xl stagger-element2">
-      {{ experiences.title }}
+      {{ rt(experiences.title) }}
+      <!-- {{ selectedExperience.title }} -->
     </h1>
-    <p class="mt-5 stagger-element2 mb-10">{{ experiences.description}}</p>
+    <p class="mt-5 stagger-element2 mb-10">{{ rt(experiences.description)}}</p>
     <div class="flex justify-start flex-wrap gap-5 mt-5 stagger-element2">
       <button
         class="py-2 px-5 rounded-full stagger-element2"
