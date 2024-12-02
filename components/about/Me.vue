@@ -39,11 +39,10 @@ useTitleAnimation(paragraphRef, .3)
   </section>
   <div class="text-center relative mt-10">
     <h1 ref="titleRef" class="text-2xl md:text-3xl lg:text-6xl mb-10"> 
-      Hi, I'm Elvin, but you can call me Elvin Code :) 
+      {{ $t('home_title') }}
     </h1> 
     <p ref="paragraphRef" class="text-lg md:text-xl px-5 text-center flex justify-center md:max-w-7xl mx-auto"> 
-      I'm a frontend developer passionate about transforming ideas into sleek, intuitive digital experiences. With a deep love for remote work, I thrive in flexible environments where creativity and efficiency meet. 
-      I specialize in Vue.js
+      {{$t('home_description')}}
     </p> 
   </div>
  </main>

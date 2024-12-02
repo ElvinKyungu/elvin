@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { ExperienceDetail } from '@/types/experiences'
 import gsap from 'gsap'
-
-defineProps<{
+const { rt } = useI18n()
+const props = defineProps<{
   experiences: ExperienceDetail
 }>()
 
@@ -36,6 +36,7 @@ const triggerAnimations = () => {
 }
 
 const switchSkillType = (skillType: 'learned' | 'locatedCompany') => {
+  console.log(skillType)
   if (skillType !== activeHistoryType.value) {
     activeHistoryType.value = skillType
   }
@@ -54,7 +55,7 @@ onMounted(() => {
 <template>
   <div ref="rightPanel" class="">
     <div class="flex justify-between stagger-element my-5 lg:-mt-10">
-      <img :src="experiences.image" alt="" class="rounded-lg h-96 w-full object-cover cursor-pointer">
+      <img :src="rt(experiences.image)" alt="" class="rounded-lg h-96 w-full object-cover cursor-pointer">
     </div>
     <div class="relative">
       <div class="grid grid-cols-12 stagger-element">
@@ -74,9 +75,9 @@ onMounted(() => {
       </div>
     </div>
     <h1 class="mt-7 text-2xl stagger-element2">
-      {{ experiences.title }}
+      {{ rt(experiences.title) }}
     </h1>
-    <p class="mt-5 stagger-element2 mb-10">{{ experiences.description}}</p>
+    <p class="mt-5 stagger-element2 mb-10">{{ rt(experiences.description)}}</p>
     <div class="flex justify-start flex-wrap gap-5 mt-5 stagger-element2">
       <button
         class="py-2 px-5 rounded-full stagger-element2"
@@ -94,7 +95,7 @@ onMounted(() => {
       </button>
     </div>
     <div ref="historyContentRef" class="mt-8">
-      <ExperiencesContent :historyContent="experiences[activeHistoryType]" />
+      <ExperiencesContent :experienceContent="experiences[activeHistoryType]" />
     </div>
   </div>
 </template>
