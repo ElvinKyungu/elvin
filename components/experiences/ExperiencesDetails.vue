@@ -36,6 +36,7 @@ const triggerAnimations = () => {
 }
 
 const switchSkillType = (skillType: 'learned' | 'locatedCompany') => {
+  console.log(skillType)
   if (skillType !== activeHistoryType.value) {
     activeHistoryType.value = skillType
   }
@@ -75,7 +76,6 @@ onMounted(() => {
     </div>
     <h1 class="mt-7 text-2xl stagger-element2">
       {{ rt(experiences.title) }}
-      <!-- {{ selectedExperience.title }} -->
     </h1>
     <p class="mt-5 stagger-element2 mb-10">{{ rt(experiences.description)}}</p>
     <div class="flex justify-start flex-wrap gap-5 mt-5 stagger-element2">
@@ -95,7 +95,7 @@ onMounted(() => {
       </button>
     </div>
     <div ref="historyContentRef" class="mt-8">
-      <ExperiencesContent :historyContent="experiences[activeHistoryType]" />
+      <ExperiencesContent :experienceContent="experiences[activeHistoryType]" />
     </div>
   </div>
 </template>

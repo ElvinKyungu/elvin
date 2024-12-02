@@ -11,8 +11,7 @@ console.log(experiences)
 
 const [rawExperienceDetails]: ExperienceDetail[] = tm("experiencesDetails")
 
-console.log(rawExperienceDetails);
-
+console.log(rt(rawExperienceDetails.image));
 
 // const activeExperienceTitle = ref(experiences.title) 
 

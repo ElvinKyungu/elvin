@@ -3,13 +3,13 @@ import type { ArticleDetail } from '@/types/experiences'
 
 const { rt } = useI18n()
 defineProps<{
-  historyContent: ArticleDetail[]
+  experienceContent: ArticleDetail[]
 }>()
 </script>
 
 <template>
   <section>
-    <div v-for="(history, index) in historyContent" :key="index" class="mt-5">
+    <div v-for="(history, index) in experienceContent" :key="index" class="mt-5">
       <div class="flex gap-4">
         <img :src="rt(history.img)" class="w-28 h-20" :alt="rt(history.title)">
         <div>
