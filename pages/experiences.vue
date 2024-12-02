@@ -7,35 +7,30 @@ import { useTitleAnimation } from '@/composables/useTitleAnimation'
 const { rt, t, tm } = useI18n()
 
 const experiences = ref<Experience []>(tm("experiences"))
-console.log(experiences)
 
 const [rawExperienceDetails]: ExperienceDetail[] = tm("experiencesDetails")
 
-console.log(rt(rawExperienceDetails.image));
 
-// const activeExperienceTitle = ref(experiences.title) 
+const activeExperienceTitle = ref(rt(rawExperienceDetails.title)) 
 
 const cardHistory = ref<HTMLElement | null>(null)
 
 useTitleAnimation(cardHistory, .5)
 
 function getExperienceDetails(title: string) {
-  console.log(title);
-  // return experiences.value.find((experience: Experience) => experience.title === title)
+  return rawExperienceDetails.find((experienceDetail: Experience) => experienceDetail.title === title)
 }
 
 // Function to handle the animation sequence
 function selectExperience(experienceDetail) {
-  console.log( experienceDetail.title);
-
   gsap.to('.experience-details', {
     opacity: 0,
     duration: 0.5,
     ease: 'power2.inOut',
     onComplete() {
       // Change the content after fade out
-      // selectedExperience = experienceDetail
-      // activeExperienceTitle = experienceDetail.title
+      rawExperienceDetails = experienceDetail
+      activeExperienceTitle.value = experienceDetail.title
 
       gsap.to('.experience-details', {
         opacity: 1,
@@ -71,7 +66,7 @@ onMounted(() => {
           <div class="relative pb-7 rounded-xl">
             <div class="grid grid-cols-12 md:space-x-10 lg:space-x-20">
 
-              <div v-if="experiences.length>0" class="col-span-12 md:col-span-5">
+              <div class="col-span-12 md:col-span-5">
                 <Experiences
                   v-for="(experience, index) in experiences"
                   :key="index"
@@ -79,6 +74,7 @@ onMounted(() => {
                   :title="rt(experience.title)"
                   :description="rt(experience.description)"
                   :isLast="false"
+                  @click="selectExperience(getExperienceDetails(rt(experience.title)))"
                  >
                   <template #icon>
                     <IconsIconCheck />
