@@ -11,3 +11,10 @@ export interface ExperienceDetail {
   learned: ArticleDetail[]
   locatedCompany: ArticleDetail[]
 }
+
+export interface Experience {
+  date: string
+  title: string
+  description: string
+  isLast: boolean
+}

@@ -2,12 +2,13 @@
 import type { ExperienceDetail } from '@/types/experiences'
 import gsap from 'gsap'
 
+const { rt } = useI18n()
 defineProps<{
   experiences: ExperienceDetail
 }>()
 
-const activeHistoryType = ref<'learned' | 'locatedCompany'>('learned')
-const historyContentRef = ref<HTMLElement | null>(null)
+const activeExperienceType = ref<'learned' | 'locatedCompany'>('learned')
+const experienceContentRef = ref<HTMLElement | null>(null)
 
 // Trigger GSAP Animations
 const triggerAnimations = () => {
@@ -26,9 +27,9 @@ const triggerAnimations = () => {
     ease: 'power2.out',
   })
 
-  if (historyContentRef.value) {
+  if (experienceContentRef.value) {
     gsap.fromTo(
-      historyContentRef.value,
+      experienceContentRef.value,
       { opacity: 0, y: 20 },
       { opacity: 1, y: 0, duration: 1, ease: 'quad.inOut' }
     )
@@ -36,12 +37,12 @@ const triggerAnimations = () => {
 }
 
 const switchSkillType = (skillType: 'learned' | 'locatedCompany') => {
-  if (skillType !== activeHistoryType.value) {
-    activeHistoryType.value = skillType
+  if (skillType !== activeExperienceType.value) {
+    activeExperienceType.value = skillType
   }
 }
 
-watch(activeHistoryType, async () => {
+watch(activeExperienceType, async () => {
   await nextTick()
   triggerAnimations()
 })
@@ -54,7 +55,7 @@ onMounted(() => {
 <template>
   <div ref="rightPanel" class="">
     <div class="flex justify-between stagger-element my-5 lg:-mt-10">
-      <img :src="experiences.image" alt="" class="rounded-lg h-96 w-full object-cover cursor-pointer">
+      <img :src="rt(experiences.image)" :alt="rt(experiences.title)" class="rounded-lg h-96 w-full object-cover cursor-pointer">
     </div>
     <div class="relative">
       <div class="grid grid-cols-12 stagger-element">
@@ -74,27 +75,32 @@ onMounted(() => {
       </div>
     </div>
     <h1 class="mt-7 text-2xl stagger-element2">
-      {{ experiences.title }}
+      {{ rt(experiences.title) }}
     </h1>
-    <p class="mt-5 stagger-element2 mb-10">{{ experiences.description}}</p>
+    <p class="mt-5 stagger-element2 mb-10">{{ rt(experiences.description)}}</p>
     <div class="flex justify-start flex-wrap gap-5 mt-5 stagger-element2">
       <button
         class="py-2 px-5 rounded-full stagger-element2"
-        :class="activeHistoryType === 'learned' ? 'bg-black text-white border border-black' : 'border'"
+        :class="activeExperienceType === 'learned' ? 'bg-black text-white border border-black' : 'border'"
         @click="switchSkillType('learned')"
       >
         what I've learned
       </button>
       <button
         class="py-2 px-5 rounded-full stagger-element2"
-        :class="activeHistoryType === 'locatedCompany' ? 'bg-black text-white' : 'border'"
+        :class="activeExperienceType === 'locatedCompany' ? 'bg-black text-white' : 'border'"
         @click="switchSkillType('locatedCompany')"
       >
         Company location
       </button>
     </div>
-    <div ref="historyContentRef" class="mt-8">
-      <ExperiencesContent :historyContent="experiences[activeHistoryType]" />
+    <div ref="experienceContentRef" class="mt-8">
+      <ExperiencesContent 
+        :experienceContent="
+          Array.isArray(experiences[activeExperienceType]) ? 
+          experiences[activeExperienceType] : []
+        "
+      />
     </div>
   </div>
 </template>
