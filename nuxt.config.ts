@@ -22,7 +22,7 @@ export default defineNuxtConfig({
         file: "fr-France.json"
       }
     ],
-    defaultLocale: "en",
+    defaultLocale: "fr",
   },
   runtimeConfig: {
     public: {

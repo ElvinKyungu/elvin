@@ -147,30 +147,42 @@
   "experience_title": "Experiences",
   "experiences": [
     {
-      "date": "July - October",
+      "id": 6,
+      "date": "December 2024 - Now",
+      "title": "Tech Magister",
+      "description": "At Tech Magister, I developed an automated real estate document generation web app using React/Next.js, integrating multiple APIs (Google Maps, ChatGPT, French Land Registry) to produce professional reports from minimal user input.",
+      "isLast": false
+    },
+    {
+      "id": 5,
+      "date": "July 2024 - October 2024",
       "title": "Efficient Outsource SRL",
       "description": "At Efficient Outsource SRL, I developed a microfinance dashboard, enhancing the user experience and backend integration for smooth financial operations.",
       "isLast": false
     },
     {
+      "id": 4,
       "date": "March 2024 - May 2024",
       "title": "Atlantic Zone",
       "description": "I built a device tracking app at Atlantic Zone, ensuring real-time data management and notification systems for seamless operations.",
       "isLast": false
     },
     {
+      "id": 3,
       "date": "July 2023 - April 2024",
       "title": "Soixante Circuits",
       "description": "At Soixante Circuits, I worked on high-profile projects like Garden-Map with Google and Michael Kors, focusing on frontend development and Google Maps integration.",
       "isLast": false
     },
     {
+      "id": 2,
       "date": "January 2024 - June 2023",
       "title": "Bayamo",
       "description": "At Bayamo, I helped build a scalable dropshipping platform, optimizing transactions and inventory management for smoother user experiences.",
       "isLast": false
     },
     {
+      "id": 1,
       "date": "November 2022 - March 2023",
       "title": "Lushitrap",
       "description": "I developed a music streaming and download app for Lushitrap, improving the download flow and content recommendations for a better user experience.",
@@ -180,6 +192,25 @@
 
   "experiencesDetails": [
     {
+      "id": 6,
+      "title": "Tech Magister",
+      "image": "./france.jpg",
+      "description": "I developed an automated real estate document generation web app using React/Next.js, integrating multiple APIs (Google Maps, ChatGPT, French Land Registry) to produce professional reports from minimal user input.",
+      "learned": [
+        {
+          "img": "./elvin3.jpg",
+          "title": "Modern Frontend Frameworks",
+          "description": "Mastered Vue.js with TypeScript, enhanced animations using GSAP, and optimized component interactions through VueUse and TailwindCSS."
+        }
+      ],
+      "locatedCompany": {
+        "img": "./russie.jpg",
+        "title": "Russia",
+        "description": "Based in Russia, this project allowed me to refine my skills with a modern tech stack for finance solutions."
+      }
+    },
+    {
+      "id": 5,
       "title": "Efficient Outsource SRL",
       "image": "./russie.jpg",
       "description": "Developed a robust microfinance dashboard with a seamless UX and solid backend integration.",
@@ -197,6 +228,7 @@
       }
     },
     {
+      "id": 4,
       "title": "Atlantic Zone",
       "image": "./espagne.jpg",
       "description": "Developed a device-tracking app with real-time data management and seamless notification systems.",
@@ -214,6 +246,7 @@
       }
     },
     {
+      "id": 3,
       "title": "Soixante Circuits",
       "image": "./france.jpg",
       "description": "Worked on innovative projects like Garden-Map with Google and Michael Kors, with a focus on frontend and Google Maps integrations.",
@@ -231,6 +264,7 @@
       }
     },
     {
+      "id": 2,
       "title": "Bayamo",
       "image": "./camroun.jpg",
       "description": "Contributed to building a scalable dropshipping platform, streamlining transactions and inventory management.",
@@ -248,6 +282,7 @@
       }
     },
     {
+      "id": 1,
       "title": "Lushitrap",
       "image": "./lubumbashi.jpg",
       "description": "Built a music streaming and download app, optimizing content delivery and user experience.",
@@ -265,5 +300,4 @@
       }
     }
   ]
-
 }

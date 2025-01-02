@@ -5,6 +5,7 @@ export interface ArticleDetail {
 }
 
 export interface ExperienceDetail {
+  id: number
   title: string
   image: string
   description: string
@@ -13,6 +14,7 @@ export interface ExperienceDetail {
 }
 
 export interface Experience {
+  id: number
   date: string
   title: string
   description: string

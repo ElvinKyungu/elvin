@@ -23,24 +23,23 @@ useTitleAnimation(cardHistory, .5)
 
 // Add type safety to getExperienceDetails
 function getExperienceDetails(title: string): ExperienceDetail | undefined {
-  const searchTitle = title.trim().toLowerCase()
-  console.log('Searching for title:', title);
-  console.log('Available experiences:', rawExperienceDetails.value);
   return rawExperienceDetails.value.find(
-    (experienceDetail: ExperienceDetail) => 
-      experienceDetail.title.loc.source.toLowerCase() === searchTitle
+    (experienceDetail: ExperienceDetail) => rt(experienceDetail.title) === title
   )
 }
 
-// Update selectExperience to handle undefined cases
 function selectExperience(title: string): void {
   const experienceDetail = getExperienceDetails(title)
-  console.log(experienceDetail?.title)
-  // Guard clause if no matching experience is found
+
   if (!experienceDetail) {
     console.warn(`No experience found with title: ${title}`)
     return
   }
+
+  console.log('Experience detail found:', {
+    selectedTitle: title,
+    matchedTitle: rt(experienceDetail.title),
+  })
 
   gsap.to('.experience-details', {
     opacity: 0,
@@ -48,14 +47,14 @@ function selectExperience(title: string): void {
     ease: 'power2.inOut',
     onComplete() {
       rawExperienceDetails.value = [experienceDetail]
-      activeExperienceTitle.value = experienceDetail.title
+      activeExperienceTitle.value = rt(experienceDetail.title)
 
       gsap.to('.experience-details', {
         opacity: 1,
         duration: 0.5,
         ease: 'power2.inOut',
       })
-    }
+    },
   })
 }
 
@@ -91,7 +90,7 @@ onMounted(() => {
                   :title="rt(experience.title)"
                   :description="rt(experience.description)"
                   :isLast="false"
-                  @click="selectExperience(rt(experience.title))"
+                  @click="selectExperience(rt(experience.title  ))"
                 >
                   <template #icon>
                     <IconCheck />
