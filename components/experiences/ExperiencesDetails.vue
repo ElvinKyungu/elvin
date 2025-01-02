@@ -42,6 +42,9 @@ const switchSkillType = (skillType: 'learned' | 'locatedCompany') => {
   if (skillType !== activeExperienceType.value) {
     activeExperienceType.value = skillType;
   }
+  else {
+    console.log(activeExperienceType.value);
+  }
 };
 
 watch(activeExperienceType, async () => {
@@ -63,7 +66,6 @@ onMounted(() => {
         class="rounded-lg h-96 w-full object-cover cursor-pointer"
       >
     </div>
-    
     <div class="relative">
       <div class="grid grid-cols-12 stagger-element">
         <div class="col-span-12 md:col-span-6" />

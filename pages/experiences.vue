@@ -23,15 +23,19 @@ useTitleAnimation(cardHistory, .5)
 
 // Add type safety to getExperienceDetails
 function getExperienceDetails(title: string): ExperienceDetail | undefined {
+  const searchTitle = title.trim().toLowerCase()
+  console.log('Searching for title:', title);
+  console.log('Available experiences:', rawExperienceDetails.value);
   return rawExperienceDetails.value.find(
-    (experienceDetail: ExperienceDetail) => experienceDetail.title === title
+    (experienceDetail: ExperienceDetail) => 
+      experienceDetail.title.loc.source.toLowerCase() === searchTitle
   )
 }
 
 // Update selectExperience to handle undefined cases
 function selectExperience(title: string): void {
   const experienceDetail = getExperienceDetails(title)
-  
+  console.log(experienceDetail?.title)
   // Guard clause if no matching experience is found
   if (!experienceDetail) {
     console.warn(`No experience found with title: ${title}`)
