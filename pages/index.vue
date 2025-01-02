@@ -23,6 +23,7 @@ const { setLocale } = useI18n()
       <AboutMe/>
       <HomeStackCard/>
       <HomeWalletCard/>
+      <InspiraAnimatedBeam/>
       <HomeStackClicakbleCard/>
       <Testimonials/>
       <ContactGetInTouch/>
