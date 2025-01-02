@@ -144,17 +144,16 @@ const openDocumentation = () => {
         <div ref="cardRef1" class="col-span-6 md:col-span-5 bg-black text-white p-5 h-32 rounded-md">
           <div ref="paragraphRef2" class="flex justify-between w-full">
             <span>{{ $t('home_stack_black_card')}}</span>
-            <IconsIconRight class="text-white"/>
+            <IconArrowRight class="text-white"/>
           </div>
         </div>
         <div ref="cardRef2" class="col-span-6 md:col-span-5 bg-blue-500 text-white p-5 h-32 rounded-md">
           <div ref="paragraphRef3" class="flex justify-between w-full">
             <span>{{ $t('home_stack_blue_card')}}</span>
-            <IconsIconRight/>
+            <IconArrowRight/>
           </div>
         </div>
       </div>
-  
       <div ref="cardRef3" class="grid grid-cols-12 border border-[#616161] mt-5 p-5 rounded-lg md:p-5">
         <div ref="paragraphRef4" class="text-lg uppercase col-span-2">{{ $t('home_stack_card_title')}}</div>
         <div class="col-span-12 md:col-span-10">
@@ -168,7 +167,7 @@ const openDocumentation = () => {
                       class="preview-button left-3 text-white z-40 absolute flex gap-2 bg-black/50 hover:bg-black/70 transition-colors backdrop-blur-sm top-2 rounded-full border border-white/50 px-5 py-1"
                     >
                       <span class="text-sm">Documentation</span>
-                      <IconsIconArrowGrowUp class="w-4 h-4 text-white" />
+                      <IconArrowGrowUp class="w-4 h-4 text-white" />
                     </button>
                     <div class="z-50 flex right-0 absolute top-2">
                       <HomeHeartAnimate/>
@@ -193,7 +192,7 @@ const openDocumentation = () => {
                   >
                     <div class="components-result">
                       <div class="flex items-center gap-3">
-                        <IconsIconPincel />
+                        <IconPincel />
                         <span class="">{{ card.componentName }}</span>
                       </div>
                       <div class="flex items-center gap-3 ">

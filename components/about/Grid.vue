@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { useTitleAnimation } from '@/composables/useTitleAnimation'
 import { useParagraphAnimation } from '@/composables/useParagraphAnimation'
-import firstImg from '@/assets/images/elvin2.jpeg'
-import secondImg from '@/assets/images/elvin3.jpeg'
-import thirtImg from '@/assets/images/elvin7.jpeg'
-import thourthImg from '@/assets/images/elvin8.jpeg'
-import fiveImg from '@/assets/images/elvin11.png'
-import sixImg from '@/assets/images/ekn.jpeg'
+import firstImg from '@/assets/images/elvin2.jpg'
+import secondImg from '@/assets/images/elvin3.jpg'
+import thirtImg from '@/assets/images/elvin7.jpg'
+import thourthImg from '@/assets/images/elvin8.jpg'
+import fiveImg from '@/assets/images/elvin11.jpg'
+import sixImg from '@/assets/images/ekn.jpg'
 
 interface GalleryImages {
   elvin2: string

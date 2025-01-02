@@ -1,17 +1,17 @@
 <script setup lang="ts">
 import conf12 from '@/assets/images/conf12.jpg'
-import conf15 from '@/assets/images/elvin2.jpeg'
-import conf16 from '@/assets/images/elvin10.jpeg'
-import conf17 from '@/assets/images/elvin7.jpeg'
-import conf1 from '@/assets/images/conf1.jpeg'
-import conf2 from '@/assets/images/conf2.jpeg'
-import conf4 from '@/assets/images/conf4.jpeg'
-import conf5 from '@/assets/images/conf5.jpeg'
-import conf6 from '@/assets/images/conf6.jpeg'
-import conf7 from '@/assets/images/conf7.jpeg'
+import conf15 from '@/assets/images/elvin2.jpg'
+import conf16 from '@/assets/images/elvin10.jpg'
+import conf17 from '@/assets/images/elvin7.jpg'
+import conf1 from '@/assets/images/conf1.jpg'
+import conf2 from '@/assets/images/conf2.jpg'
+import conf4 from '@/assets/images/conf4.jpg'
+import conf5 from '@/assets/images/conf5.jpg'
+import conf6 from '@/assets/images/conf6.jpg'
+import conf7 from '@/assets/images/conf7.jpg'
 import conf8 from '@/assets/images/conf8.jpg'
-import conf13 from '@/assets/images/conf13.jpeg'
-import conf14 from '@/assets/images/conf14.jpeg'
+import conf13 from '@/assets/images/conf13.jpg'
+import conf14 from '@/assets/images/conf14.jpg'
 
 const conferences = [
   { img: conf15, title: "A passion for tech as a lever...", price: 2024 },

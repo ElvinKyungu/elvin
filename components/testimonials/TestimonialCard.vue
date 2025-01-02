@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import IconCitation from "@/components/icons/IconCitation.vue"
-
 defineProps({
   userImage: String,
   userTitle: String,

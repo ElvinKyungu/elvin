@@ -72,7 +72,7 @@ onMounted(() => {
           <a href="#contact">
             <div class="flex justify-between items-center">
               <span class="text-sm md:text-sm">{{ $t('first_wallet_btn') }}</span>
-              <IconsIconArrowGrowUp/>
+              <IconArrowGrowUp/>
             </div>
           </a>
         </div>

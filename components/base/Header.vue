@@ -127,29 +127,29 @@ const setLanguage = (lang: 'en' | 'fr') => {
               <ul class="flex space-x-7 text-lg">
                 <li class="border-b-4 py-3 border-transparent">
                   <a href="https://github.com/elvinKyungu/" target="_blanck">
-                    <IconsIconGithub class="w-7 h-7 relative z-10 text-white"/>
+                    <IconGithub class="w-7 h-7 relative z-10 text-white"/>
                   </a>
                 </li>
                 <li class="border-b-4 py-3 border-transparent">
                   <a href="https://www.linkedin.com/in/elvin-kyungu/" target="_blanck">
-                    <IconsIconLinkedin class="w-7 h-7 relative z-10 text-white"/>
+                    <IconLinkedin class="w-7 h-7 relative z-10 text-white"/>
                   </a>
                 </li>
                 <li class="border-b-4 py-3 border-transparent">
                   <a href="https://x.com/ElvinKyungu" target="_blanck">
-                    <IconsIconX class="w-7 h-7 relative z-10 text-white"/>
+                    <IconX class="w-7 h-7 relative z-10 text-white"/>
                   </a>
                 </li>
                 <li class="border-b-4 py-3 border-transparent">
                   <a href="https://www.instagram.com/elvin.kyungu/" target="_blanck">
-                    <IconsIconInstagram class="w-7 h-7 relative z-10 text-white"/>
+                    <IconInstagram class="w-7 h-7 relative z-10 text-white"/>
                   </a>
                 </li>
               </ul>
             </li>
             <li class="border-b-4 py-3 border-transparent relative">
               <a @click="showPopup">
-                <IconsIconTranslate class="w-7 h-7 text-white cursor-pointer"/>
+                <IconTranslate class="w-7 h-7 text-white cursor-pointer"/>
               </a>
               <div 
                 v-if="showLanguagePopup"
@@ -174,7 +174,7 @@ const setLanguage = (lang: 'en' | 'fr') => {
               </div>
             </li>
             <li @click="open_menu" class="md:border-b-4 cursor-pointer py-3 border-transparent">
-              <IconsIconBars class="text-white w-8 h-8 relative z-10"/>
+              <IconBars class="text-white w-8 h-8 relative z-10"/>
             </li>
           </ul>
         </li>
@@ -186,7 +186,7 @@ const setLanguage = (lang: 'en' | 'fr') => {
       >
         <div class="sidebar">
           <button class="sidebar__menu-trigger menu__right" @click="close_menu">
-            <IconsIconClose
+            <IconClose
               class="w-10 h-10"
             />
           </button>
@@ -196,16 +196,16 @@ const setLanguage = (lang: 'en' | 'fr') => {
             <li v-for="item in menuItems" :key="item.name" @mouseenter="enter" @mouseleave="leave" class="menu-item">
               <template v-if="item.route.startsWith('http')">
                 <a :href="item.route" target="_blank" class="flex gap-4 items-center">
-                  <span ref="icons" class="icon">
-                    <IconsIconArrowGrowUp class="text-white" />
+                  <span ref="" class="icon">
+                    <IconArrowGrowUp class="text-white" />
                   </span>
                   {{ item.name }}
                 </a>
               </template>
               <template v-else>
                 <router-link :to="item.route" class="flex gap-4 items-center">
-                  <span ref="icons" class="icon">
-                    <IconsIconArrowGrowUp class="text-white" />
+                  <span ref="" class="icon">
+                    <IconArrowGrowUp class="text-white" />
                   </span>
                   {{ item.name }}
                 </router-link>

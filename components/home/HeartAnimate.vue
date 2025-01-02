@@ -39,14 +39,14 @@ onMounted(() => {
 <template>
   <div class="z-50 flex right-3 absolute top-0">
     <button @click="animateHearts" class="rounded-full bg-black/20 p-2">
-      <IconsIconHeart class="heart-icon text-white"/>
+      <IconHeart class="heart-icon text-white"/>
     </button>
     <div
       v-for="index in hearts"
       :key="index"
       :class="`heart-animation heart-animation-${index}`"
     >
-      <IconsIconHeart class="heart-icon"/>
+      <IconHeart class="heart-icon"/>
     </div>
   </div>
 </template>

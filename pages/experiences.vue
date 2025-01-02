@@ -77,7 +77,7 @@ onMounted(() => {
                   @click="selectExperience(getExperienceDetails(rt(experience.title)))"
                  >
                   <template #icon>
-                    <IconsIconCheck />
+                    <IconCheck />
                   </template>
                 </Experiences>
               </div>
