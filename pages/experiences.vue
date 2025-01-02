@@ -1,35 +1,49 @@
 <script setup lang="ts">
 import gsap from 'gsap'
-
 import type { ExperienceDetail, Experience } from '@/types/experiences'
 import { useTitleAnimation } from '@/composables/useTitleAnimation'
 
 const { rt, t, tm } = useI18n()
 
-const experiences = ref<Experience []>(tm("experiences"))
+const experiences = ref<Experience[]>(tm("experiences"))
 
-const [rawExperienceDetails]: ExperienceDetail[] = tm("experiencesDetails")
+const rawExperienceDetails = ref<ExperienceDetail[]>(
+  tm("experiencesDetails") || [] 
+)
 
-
-const activeExperienceTitle = ref(rt(rawExperienceDetails.title)) 
+const activeExperienceTitle = ref(
+  rawExperienceDetails.value.length > 0 
+    ? rt(rawExperienceDetails.value[0].title) 
+    : ''
+)
 
 const cardHistory = ref<HTMLElement | null>(null)
 
 useTitleAnimation(cardHistory, .5)
 
-function getExperienceDetails(title: string) {
-  return rawExperienceDetails.find((experienceDetail: Experience) => experienceDetail.title === title)
+// Add type safety to getExperienceDetails
+function getExperienceDetails(title: string): ExperienceDetail | undefined {
+  return rawExperienceDetails.value.find(
+    (experienceDetail: ExperienceDetail) => experienceDetail.title === title
+  )
 }
 
-// Function to handle the animation sequence
-function selectExperience(experienceDetail) {
+// Update selectExperience to handle undefined cases
+function selectExperience(title: string): void {
+  const experienceDetail = getExperienceDetails(title)
+  
+  // Guard clause if no matching experience is found
+  if (!experienceDetail) {
+    console.warn(`No experience found with title: ${title}`)
+    return
+  }
+
   gsap.to('.experience-details', {
     opacity: 0,
     duration: 0.5,
     ease: 'power2.inOut',
     onComplete() {
-      // Change the content after fade out
-      rawExperienceDetails = experienceDetail
+      rawExperienceDetails.value = [experienceDetail]
       activeExperienceTitle.value = experienceDetail.title
 
       gsap.to('.experience-details', {
@@ -42,14 +56,14 @@ function selectExperience(experienceDetail) {
 }
 
 onMounted(() => {
-  // Initial fade-in animation when the component is mounted
-  gsap.fromTo('.experience-details', {
-    opacity: 0
-  }, {
-    opacity: 1,
-    duration: 0.5,
-    ease: 'power2.inOut'
-  })
+  gsap.fromTo('.experience-details', 
+    { opacity: 0 }, 
+    {
+      opacity: 1,
+      duration: 0.5,
+      ease: 'power2.inOut'
+    }
+  )
 })
 </script>
 
@@ -65,7 +79,6 @@ onMounted(() => {
           <h1 class="my-10 text-5xl">{{ t('experience_title')}}</h1>
           <div class="relative pb-7 rounded-xl">
             <div class="grid grid-cols-12 md:space-x-10 lg:space-x-20">
-
               <div class="col-span-12 md:col-span-5">
                 <Experiences
                   v-for="(experience, index) in experiences"
@@ -74,16 +87,16 @@ onMounted(() => {
                   :title="rt(experience.title)"
                   :description="rt(experience.description)"
                   :isLast="false"
-                  @click="selectExperience(getExperienceDetails(rt(experience.title)))"
-                 >
+                  @click="selectExperience(rt(experience.title))"
+                >
                   <template #icon>
                     <IconCheck />
                   </template>
                 </Experiences>
               </div>
               <div class="col-span-12 md:col-span-1"></div>
-              <div  class="col-span-12 md:col-span-6 rounded-lg py-5 -mt-10 relative">
-                <ExperiencesDetails 
+              <div class="col-span-12 md:col-span-6 rounded-lg py-5 -mt-10 relative">
+                <ExperiencesDetails
                   :experiences="rawExperienceDetails"
                   class="experience-details"
                 />
@@ -98,10 +111,11 @@ onMounted(() => {
 </template>
 
 <style>
-.img-culture{
-  @apply rounded-lg w-full h-full overflow-hidden object-cover transition-transform duration-300 ease-in-out transform hover:scale-110
+.img-culture {
+  @apply rounded-lg w-full h-full overflow-hidden object-cover transition-transform duration-300 ease-in-out transform hover:scale-110;
 }
-.container-img-culture{
-  @apply relative h-64 w-full overflow-hidden rounded-lg
+
+.container-img-culture {
+  @apply relative h-64 w-full overflow-hidden rounded-lg;
 }
 </style>
