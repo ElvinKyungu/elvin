@@ -5,7 +5,17 @@ import { useTitleAnimation } from '@/composables/useTitleAnimation'
 
 const { rt, t, tm } = useI18n()
 
-const experiences = ref<Experience[]>(tm("experiences"))
+const rawExperiences = ref<Experience[]>(tm("experiences"))
+
+
+const experiences = ref(
+  rawExperiences.value.map((exp) => ({
+    date: exp.date.loc.source,
+    title: exp.title.loc.source,
+    description: rt(exp.description[0].loc.source), 
+    isLast: exp.isLast,
+  })
+))
 
 const rawExperienceDetails = ref<ExperienceDetail[]>(
   tm("experiencesDetails") || [] 
@@ -99,10 +109,10 @@ onMounted(() => {
               </div>
               <div class="col-span-12 md:col-span-1"></div>
               <div class="col-span-12 md:col-span-6 rounded-lg py-5 -mt-10 relative">
-                <ExperiencesDetails
+                <!-- <ExperiencesDetails
                   :experiences="rawExperienceDetails"
                   class="experience-details"
-                />
+                /> -->
               </div>
             </div>
           </div>

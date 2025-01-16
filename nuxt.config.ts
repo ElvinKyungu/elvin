@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   modules: ['@vueuse/nuxt', '@vueuse/motion/nuxt', '@nuxtjs/tailwindcss', '@nuxtjs/i18n'],
   i18n: {
     lazy: true,
+    
     langDir: 'i18n/locales/',
     strategy: 'prefix_except_default',
     locales: [
