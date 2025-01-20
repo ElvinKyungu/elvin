@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import type { ExperienceDetail } from '~/types/experiences';
-import gsap from 'gsap';
+import type { ExperienceDetail } from '~/types/experiences'
+import gsap from 'gsap' 
 
 const props = defineProps<{
-  experiences: ExperienceDetail[];
-}>();
+  experiences: ExperienceDetail[]
+}>()
 
-const { rt } = useI18n();
-const activeExperienceType = ref<'learned' | 'locatedCompany'>('learned');
-const experienceContentRef = ref<HTMLElement | null>(null);
+const { rt } = useI18n()
+const activeExperienceType = ref<'learned' | 'locatedCompany'>('learned')
+const experienceContentRef = ref<HTMLElement | null>(null)
 
-const currentExperience = computed(() => props.experiences[0] || null);
+const currentExperience = computed(() => props.experiences[0] || null)
 
 const triggerAnimations = () => {
   gsap.from('.stagger-element', {
@@ -19,7 +19,7 @@ const triggerAnimations = () => {
     duration: 0.3,
     stagger: 0.1,
     ease: 'power2.out',
-  });
+  })
 
   gsap.from('.stagger-element2', {
     opacity: 0,
@@ -27,34 +27,31 @@ const triggerAnimations = () => {
     duration: 0.6,
     stagger: 0.1,
     ease: 'power2.out',
-  });
+  })
 
   if (experienceContentRef.value) {
     gsap.fromTo(
       experienceContentRef.value,
       { opacity: 0, y: 20 },
       { opacity: 1, y: 0, duration: 1, ease: 'quad.inOut' }
-    );
+    )
   }
-};
+}
 
 const switchSkillType = (skillType: 'learned' | 'locatedCompany') => {
   if (skillType !== activeExperienceType.value) {
-    activeExperienceType.value = skillType;
+    activeExperienceType.value = skillType
   }
-  else {
-    console.log(activeExperienceType.value);
-  }
-};
+}
 
 watch(activeExperienceType, async () => {
-  await nextTick();
-  triggerAnimations();
-});
+  await nextTick()
+  triggerAnimations()
+})
 
 onMounted(() => {
-  triggerAnimations();
-});
+  triggerAnimations()
+})
 </script>
 
 <template>

@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import gsap from 'gsap'
-import type { ExperienceDetail, Experience } from '@/types/experiences'
+import type { ExperienceDetail, Experience, Experiencei18n } from '@/types/experiences'
 import { useTitleAnimation } from '@/composables/useTitleAnimation'
-
+import type{ExperiencesDetails} from '@/types/experienceDetailsi18n'
 const { rt, t, tm } = useI18n()
 
 const rawExperiences = ref<Experience[]>(tm("experiences"))
 
-
 const experiences = ref(
-  rawExperiences.value.map((exp) => ({
+  rawExperiences.value.map((exp: Experiencei18n) => ({
+    id:6,
     date: exp.date.loc.source,
     title: exp.title.loc.source,
     description: rt(exp.description[0].loc.source), 
@@ -26,7 +26,7 @@ const activeExperienceTitle = ref(
     ? rt(rawExperienceDetails.value[0].title) 
     : ''
 )
-
+console.log(rawExperienceDetails.value)
 const cardHistory = ref<HTMLElement | null>(null)
 
 useTitleAnimation(cardHistory, .5)

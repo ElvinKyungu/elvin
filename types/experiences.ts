@@ -20,3 +20,21 @@ export interface Experience {
   description: string
   isLast: boolean
 }
+export interface Experiencei18n {
+  date: {
+    loc: {
+      source: string;
+    };
+  };
+  title: {
+    loc: {
+      source: string;
+    };
+  };
+  description: Array<{
+    loc: {
+      source: string;
+    };
+  }>;
+  isLast: boolean;
+}
