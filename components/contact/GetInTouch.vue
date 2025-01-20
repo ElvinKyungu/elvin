@@ -15,14 +15,14 @@ useTitleAnimation(titleRef3, 0.4)
     <div ref="titleRef2" class="grid grid-cols-12 gap-4 relative z-10">
       <div class="col-span-12 md:col-span-3 my-5 mt-2">
         <p class="h-[1px] bg-white"></p>
-        <p class="text-sm">Get in Touch to work with me</p>
+        <p class="text-sm">{{ $t('contact_paragraph') }}</p>
       </div>
       <h1 class="col-span-12 md:col-span-9 text-2xl md:text-3xl lg:text-5xl">
-        Do you have any questions ?
+        {{ $t('contact_first_title') }}
       </h1>
     </div>
     <h1 ref="titleRef3" class="relative z-10 text-2xl  md:text-3xl lg:text-5xl">
-      or would you like to get in touch with me? I will take the time to answer you as soon as possible.
+      {{ $t('contact_second_title') }}
     </h1>
   </section>
 </template>

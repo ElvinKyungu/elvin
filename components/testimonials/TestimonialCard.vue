@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import IconCitation from "@/components/icons/IconCitation.vue"
-
 defineProps({
   userImage: String,
   userTitle: String,
@@ -8,6 +6,7 @@ defineProps({
   userName: String,
 })
 </script>
+
 <template>
   <div
     class="h-full p-4 lg:p-8 rounded-xl shadow-md cursor-pointer text-white border border-[#616161]"

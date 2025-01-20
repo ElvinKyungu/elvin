@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { useTitleAnimation } from '@/composables/useTitleAnimation'
 import { useParagraphAnimation } from '@/composables/useParagraphAnimation'
-import firstImg from '@/assets/images/elvin2.jpeg'
-import secondImg from '@/assets/images/elvin3.jpeg'
-import thirtImg from '@/assets/images/elvin7.jpeg'
-import thourthImg from '@/assets/images/elvin8.jpeg'
-import fiveImg from '@/assets/images/elvin11.png'
-import sixImg from '@/assets/images/ek.jpg'
+import firstImg from '@/assets/images/elvin2.jpg'
+import secondImg from '@/assets/images/elvin3.jpg'
+import thirtImg from '@/assets/images/elvin7.jpg'
+import thourthImg from '@/assets/images/elvin8.jpg'
+import fiveImg from '@/assets/images/elvin11.jpg'
+import sixImg from '@/assets/images/ekn.jpg'
 
 interface GalleryImages {
   elvin2: string
@@ -61,7 +61,7 @@ useTitleAnimation(sixImage, .3)
             </div>
             <div ref="secondImage" class="relative h-64 w-full overflow-hidden rounded-lg sm:w-1/2 lg:h-96">
               <img
-                :src="images.elvin8"
+                :src="images.elvin11"
                 alt="gallery"
                 class="h-full w-full object-cover"
               />
@@ -78,7 +78,7 @@ useTitleAnimation(sixImage, .3)
         <div class="w-full md:w-1/2">
           <div ref="fourthImage" class="relative h-96 w-full overflow-hidden rounded-lg lg:h-[40rem]">
             <img
-              :src="images.elvin11"
+              :src="images.elvin8"
               alt="gallery"
               class="h-full w-full object-cover"
             />

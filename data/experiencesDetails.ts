@@ -1,9 +1,9 @@
 import type { ExperienceDetail } from '@/types/experiences'
-import artile1 from '@/assets/images/elvin11.png'
-import russie from '@/assets/images/russie.png'
-import france from '@/assets/images/france.png'
-import camroun from '@/assets/images/cameroun.avif'
-import spain from '@/assets/images/espagne.jpeg'
+import artile1 from '@/assets/images/elvin11.jpg'
+import russie from '@/assets/images/russie.jpg'
+import france from '@/assets/images/france.jpg'
+import camroun from '@/assets/images/cameroun.jpg'
+import spain from '@/assets/images/espagne.jpg'
 import rdc from '@/assets/images/lubumbashi.jpg'
 
 // Efficient Outsource SRL (Russia)

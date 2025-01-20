@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import {gsap} from 'gsap'
-import vuejs from "@/assets/images/vuejs.png"
+import vuejs from "@/assets/images/vuejs.jpg"
 import tailwind from "@/assets/images/tailwindcss.jpg"
-import ts from "@/assets/images/typescript.png"
+import ts from "@/assets/images/typescript.jpg"
 import unocss from '@/assets/images/unocss.svg'
 import gsapImg from '@/assets/images/gsap.jpg'
-import js from '@/assets/images/js.png'
+import js from '@/assets/images/js.jpg'
 import nuxtImg from '@/assets/images/nuxt.svg'
 import { useTitleAnimation } from '@/composables/useTitleAnimation'
 import { useParagraphAnimation } from '@/composables/useParagraphAnimation'
@@ -127,11 +127,11 @@ const openDocumentation = () => {
     <div class="col-span-12 md:col-span-6 relative z-30">
       <div class="flex flex-col justify-between w-full h-full">
         <h1 ref="titleRef1" class="text-5xl">
-          Building Innovative Digital Experiences
+          {{ $t('home_stack_title')}}
         </h1>
         <div class="grid my-10 md:mt-5 grid-cols-12 md:flex justify-between gap-2 md:gap-5 items-center">
           <p ref="paragraphRef1" class="w-full col-span-8">
-            As a frontend developer, I craft sleek, interactive web applications, using Vue.js for its reactivity and simplicity to build precise, dynamic user experiences.
+            {{ $t('home_stack_description')}}
           </p>
           <div ref="titleRef2" class="h-[1px] col-span-4 bg-white w-full"></div>
         </div>
@@ -143,20 +143,19 @@ const openDocumentation = () => {
         <div class="col-span-2 hidden md:block"></div>
         <div ref="cardRef1" class="col-span-6 md:col-span-5 bg-black text-white p-5 h-32 rounded-md">
           <div ref="paragraphRef2" class="flex justify-between w-full">
-            <span>Mastering the art of Vue.js</span>
-            <IconsIconRight class="text-white"/>
+            <span>{{ $t('home_stack_black_card')}}</span>
+            <IconArrowRight class="text-white"/>
           </div>
         </div>
         <div ref="cardRef2" class="col-span-6 md:col-span-5 bg-blue-500 text-white p-5 h-32 rounded-md">
           <div ref="paragraphRef3" class="flex justify-between w-full">
-            <span>TailwindCSS for responsive elegance</span>
-            <IconsIconRight/>
+            <span>{{ $t('home_stack_blue_card')}}</span>
+            <IconArrowRight/>
           </div>
         </div>
       </div>
-  
       <div ref="cardRef3" class="grid grid-cols-12 border border-[#616161] mt-5 p-5 rounded-lg md:p-5">
-        <div ref="paragraphRef4" class="text-lg uppercase col-span-2">My stack</div>
+        <div ref="paragraphRef4" class="text-lg uppercase col-span-2">{{ $t('home_stack_card_title')}}</div>
         <div class="col-span-12 md:col-span-10">
           <section class="flex justify-center flex-col items-center w-full relative z-0">
             <div class="grid grid-cols-12 gap-5 relative w-full h-full">
@@ -168,7 +167,7 @@ const openDocumentation = () => {
                       class="preview-button left-3 text-white z-40 absolute flex gap-2 bg-black/50 hover:bg-black/70 transition-colors backdrop-blur-sm top-2 rounded-full border border-white/50 px-5 py-1"
                     >
                       <span class="text-sm">Documentation</span>
-                      <IconsIconArrowGrowUp class="w-4 h-4 text-white" />
+                      <IconArrowGrowUp class="w-4 h-4 text-white" />
                     </button>
                     <div class="z-50 flex right-0 absolute top-2">
                       <HomeHeartAnimate/>
@@ -193,7 +192,7 @@ const openDocumentation = () => {
                   >
                     <div class="components-result">
                       <div class="flex items-center gap-3">
-                        <IconsIconPincel />
+                        <IconPincel />
                         <span class="">{{ card.componentName }}</span>
                       </div>
                       <div class="flex items-center gap-3 ">
@@ -209,7 +208,6 @@ const openDocumentation = () => {
       </div>
     </div>
   </section>
-  
 </template>
 <style>
 

@@ -61,7 +61,7 @@ useHead({
 </script>
 <template>
   <div>
-    <BaseLoader/>
+    <!-- <BaseLoader/> -->
     <NuxtPage />
   </div>
 </template>

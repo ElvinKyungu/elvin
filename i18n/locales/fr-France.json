@@ -1,0 +1,267 @@
+{
+  "home_title": "Salut, je suis Elvin, mais vous pouvez m'appeler Elvin Code :)",
+  "home_description": "Développeur frontend passionné par la transformation des idées en expériences numériques élégantes et intuitives. Amoureux du travail à distance, je m'épanouis dans des environnements flexibles où créativité et efficacité se rencontrent. Je me spécialise dans Vue.js.",
+  "home_second_title": "Je suis un développeur spécialisé en Vue.js",
+  "home_card_animate_title": "Animé par une passion pour le développement frontend, je donne vie à des applications web modernes, réactives et dynamiques. Avec une expertise en Vue.js, Nuxt.js et TailwindCSS, je crée des expériences utilisateurs fluides et performantes. Prêt à explorer de nouvelles possibilités ? Construisons quelque chose de remarquable ensemble.",
+  
+  "first_wallet_vision": "Votre vision",
+  "first_wallet_expertise": "Mon expertise",
+  "first_wallet_title": "Donnez vie à vos projets",
+  "first_wallet_description": "Ensemble, nous pouvons transformer vos idées en solutions concrètes et performantes. Que ce soit pour créer des interfaces modernes ou des expériences utilisateurs intuitives, je suis à vos côtés à chaque étape pour concrétiser vos ambitions.",
+  "first_wallet_btn": "Démarrez votre projet maintenant",
+  
+  "second_wallet_vision": "Mes services",
+  "second_wallet_expertise": "Collaborons",
+  "second_wallet_title": "Que fais-je ?",
+  "second_wallet_description": "Je me spécialise dans la création d'interfaces web remarquables et centrées sur l'utilisateur, d'applications web progressives (PWA) et d'animations dynamiques avec GSAP. J'intègre des connexions API fluides, assure d'excellentes performances et offre une optimisation SEO complète pour vous démarquer.",
+  "second_wallet_btn": "Démarrez votre projet maintenant",
+
+  "home_stack_title": "Créer des expériences numériques innovantes",
+  "home_stack_description": "En tant que développeur frontend, je conçois des applications web interactives et élégantes, utilisant Vue.js pour sa réactivité et sa simplicité afin de créer des expériences utilisateurs précises et dynamiques.",
+  "home_stack_card_title": "Technologies",
+  "home_stack_blue_card": "TailwindCSS pour une élégance réactive",
+  "home_stack_black_card": "Maîtrise de l'art de Vue.js",
+
+  "home_title_testimonial": "Témoignages",
+  "home_testimonials": [
+    {
+      "image": "./gabriel.jpeg",
+      "message": "J'ai eu le privilège de recruter Elvin il y a un an et demi. Depuis, il a montré une croissance remarquable, livrant systématiquement des interfaces utilisateurs élégantes et impactantes. C'est un développeur frontend hautement qualifié et complet, avec une créativité et une expertise technique impressionnantes.",
+      "name": "Gabriel Delattre",
+      "title": "Cofondateur chez Capte"
+    },
+    {
+      "image": "./prof-patrick.jpeg",
+      "message": "J'ai eu le plaisir d'enseigner la programmation à Elvin à l'université, et dès le départ, j'ai reconnu son potentiel exceptionnel. Aujourd'hui, il est devenu l'un des meilleurs développeurs frontend, combinant créativité et expertise technique. Je le recommande vivement pour toute opportunité !",
+      "name": "Patrick Mukala",
+      "title": "Professeur à l'Université de Lubumbashi"
+    },
+    {
+      "image": "./kevin.jpeg",
+      "message": "Chez Soixante Circuits, Elvin s'est rapidement démarqué par sa capacité à transformer des défis complexes en solutions élégantes. Il excelle dans les technologies frontend tout en ajoutant une touche créative à chaque projet. Rapide, efficace et minutieux, il est un atout précieux pour toute équipe.",
+      "name": "Kevin Maginot",
+      "title": "Architecte d'expériences interactives et immersives"
+    },
+    {
+      "image":"./eric.jpeg",
+      "message": "J'ai travaillé avec Elvin sur plusieurs projets où il s'est distingué par son professionnalisme, sa passion pour le développement frontend et son approche proactive. Il excelle dans les technologies modernes, fait preuve d'initiative et propose des solutions innovantes. Son enthousiasme et son adaptabilité en font un atout précieux pour toute équipe.",
+      "name": "Eric Ampire",
+      "title": "Ingénieur iOS et Android chez BRP"
+    },
+    {
+      "image": "./kat.jpg",
+      "message": "Je recommande fortement Elvin Kyungu, un excellent développeur frontend. Il crée des interfaces esthétiques et fonctionnelles avec une attention remarquable aux détails. Sa capacité à collaborer et à livrer rapidement en fait un atout précieux pour toute équipe.",
+      "name": "Katya Kurkubet",
+      "title": "Développeuse frontend"
+    },
+    {
+      "image": "./user.jpg",
+      "message": "J'ai travaillé avec Elvin sur un projet pour ma société Atlantic Zone et j'ai été très satisfait de la qualité de son travail. C'est un excellent développeur frontend.",
+      "name": "Valeriu Stinca",
+      "title": "PDG chez Atlantic Zone"
+    }
+  ],
+
+  "contact_first_title": "Vous avez des questions ?",
+  "contact_second_title": "Ou souhaitez-vous me contacter ? Je prendrai le temps de vous répondre dès que possible.",
+  "contact_paragraph": "Contactez-moi pour collaborer",
+  "contact_first_title_card": "Numéro de téléphone",
+  "contact_second_title_card": "Adresse mail",
+  "contact_third_title_card": "Réseaux sociaux",
+
+  "header_links": [
+    { "label": "A propos", "url": "/about" },
+    { "label": "Expériences", "url": "/experiences" },
+    { "label": "Articles", "url": "/articles" },
+    { "label": "Conférences", "url": "/conferences" }
+  ],
+
+  "about_gallery_title": "Galerie",
+ 
+  "conferences": [
+    {
+      "title": "Une passion pour la tech comme levier...",
+      "images": "2024",
+      "year": ""
+    },
+    {
+      "title": "Le développement communautaire propulse...",
+      "images": "",
+      "year": "2022"
+    },
+    {
+      "title": "Économie, environnement, durabilité...",
+      "images": "",
+      "year": "2023"
+    }, 
+    {
+      "title": "Concours Solution",
+      "images": "",
+      "year": "2024"
+    },
+    {
+      "title": "Devfest édition étudiante",
+      "images": "",
+      "year": "2023"
+    },
+    {
+      "title": "Soft Day 2024",
+      "images": "",
+      "year": "2024"
+    },
+    {
+      "title": "Tournée d'évangélisation",
+      "images": "",
+      "year": "2024"
+    },
+    {
+      "title": "Concours de développement frontend",
+      "images": "",
+      "year": "2022"
+    },
+    {
+      "title": "Intelligence artificielle en RDC",
+      "images": "",
+      "year": "2023"
+    },
+    {
+      "title": "Jeunes dans le numérique",
+      "images": "",
+      "year": "2022"
+    },
+    {
+      "title": "Devfest GDG Lubumbashi",
+      "images": "",
+      "year": "2024"
+    },
+    {
+      "title": "Devfest GDG Lubumbashi",
+      "images": "",
+      "year": "2023"
+    }
+  ],
+  
+  "copyright_footer": "© 2024 Elvin Code Tous droits réservés.",
+
+  "experience_title": "Expériences",
+  "experiences": [
+    {
+      "date": "Juillet - Octobre",
+      "title": "Efficient Outsource SRL",
+      "description": ["Chez Efficient Outsource SRL, j'ai développé un tableau de bord de microfinance, améliorant l'expérience utilisateur et l'intégration backend pour des opérations financières fluides."],
+      "isLast": false
+    },
+    {
+      "date": "Mars 2024 - Mai 2024",
+      "title": "Atlantic Zone",
+      "description": ["J'ai créé une application de suivi d'appareils chez Atlantic Zone, assurant une gestion des données en temps réel et des systèmes de notification pour des opérations fluides."],
+      "isLast": false
+    },
+    {
+      "date": "Juillet 2023 - Avril 2024",
+      "title": "Soixante Circuits",
+      "description": ["Chez Soixante Circuits, j'ai travaillé sur des projets de grande envergure comme Garden-Map avec Google et Michael Kors, en me concentrant sur le développement frontend et l'intégration avec Google Maps."],
+      "isLast": false
+    },
+    {
+      "date": "Janvier 2024 - Juin 2023",
+      "title": "Bayamo",
+      "description": ["Chez Bayamo, j'ai contribué à la création d'une plateforme de dropshipping évolutive, optimisant les transactions et la gestion des stocks pour une expérience utilisateur plus fluide."],
+      "isLast": false
+    },
+    {
+      "date": "Novembre 2022 - Mars 2023",
+      "title": "Lushitrap",
+      "description": ["J'ai développé une application de streaming et de téléchargement musical pour Lushitrap, améliorant le flux de téléchargement et les recommandations de contenu pour une meilleure expérience utilisateur."],
+      "isLast": true
+    }
+  ],
+
+  "experiencesDetails": {
+    "efficient": {
+      "title": "Efficient Outsource SRL",
+      "image": "russie",
+      "description": "Développement d'un tableau de bord de microfinance robuste avec une UX fluide et une intégration backend solide.",
+      "learned": [
+        {
+          "img": "artile1",
+          "title": "Frameworks Frontend Modernes",
+          "description": "Maîtrise de Vue.js avec TypeScript, amélioration des animations grâce à GSAP, et optimisation des interactions des composants avec VueUse et TailwindCSS."
+        }
+      ],
+      "locatedCompany": {
+        "img": "russie",
+        "title": "Russie",
+        "description": "Basé en Russie, ce projet m'a permis d'affiner mes compétences avec une stack technologique moderne pour des solutions financières."
+      }
+    },
+    "atlanticZone": {
+      "title": "Atlantic Zone",
+      "image": "spain",
+      "description": "Développement d'une application de suivi d'appareils avec gestion de données en temps réel et systèmes de notifications fluides.",
+      "learned": [
+        {
+          "img": "artile1",
+          "title": "Intégrations de Cartes et Données en Temps Réel",
+          "description": "Maîtrise de l'API Google Maps, de Supabase pour le support backend, et de Vue.js pour créer une interface utilisateur réactive et pilotée par les données."
+        }
+      ],
+      "locatedCompany": {
+        "img": "spain",
+        "title": "Espagne",
+        "description": "Ce projet basé en Espagne m'a offert une expérience pratique dans la création d'applications interactives basées sur des cartes."
+      }
+    },
+    "soixanteCircuits": {
+      "title": "Soixante Circuits",
+      "image": "france",
+      "description": "Participation à des projets innovants comme Garden-Map avec Google et Michael Kors, axés sur le frontend et les intégrations avec Google Maps.",
+      "learned": [
+        {
+          "img": "artile1",
+          "title": "Frontend Avancé et Solutions de Bases de Données",
+          "description": "Approfondissement de mes compétences en Supabase, Pocketbase, et Vue.js, tout en créant des interfaces utilisateur engageantes."
+        }
+      ],
+      "locatedCompany": {
+        "img": "france",
+        "title": "France",
+        "description": "Un projet basé en France qui m'a poussé à intégrer des bases de données complexes et à garantir une expérience utilisateur premium."
+      }
+    },
+    "bayamo": {
+      "title": "Bayamo",
+      "image": "camroun",
+      "description": "Contribution à la construction d'une plateforme de dropshipping évolutive, simplifiant les transactions et la gestion des stocks.",
+      "learned": [
+        {
+          "img": "artile1",
+          "title": "E-Commerce et Scalabilité",
+          "description": "Amélioration de mes connaissances sur les architectures e-commerce évolutives et les systèmes de gestion des stocks."
+        }
+      ],
+      "locatedCompany": {
+        "img": "camroun",
+        "title": "Cameroun",
+        "description": "Un projet basé au Cameroun où je me suis concentré sur la création de solutions e-commerce efficaces et évolutives."
+      }
+    },
+    "lushitrap": {
+      "title": "Lushitrap",
+      "image": "rdc",
+      "description": "Création d'une application de streaming et de téléchargement musical, optimisant la diffusion de contenu et l'expérience utilisateur.",
+      "learned": [
+        {
+          "img": "artile1",
+          "title": "Streaming de Médias et Expérience Utilisateur",
+          "description": "Compréhension des subtilités du streaming de médias et des recommandations de contenu, améliorant les performances globales de l'application et la satisfaction des utilisateurs."
+        }
+      ],
+      "locatedCompany": {
+        "img": "rdc",
+        "title": "République Démocratique du Congo",
+        "description": "Un projet basé en RDC où j'ai utilisé des techniques d'intégration pour améliorer la diffusion de contenu multimédia."
+      }
+    }
+  }
+}

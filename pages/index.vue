@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 </script>
 
 <template>
@@ -11,6 +12,7 @@
       <AboutMe/>
       <HomeStackCard/>
       <HomeWalletCard/>
+      <!-- <InspiraAnimatedBeam/> -->
       <HomeStackClicakbleCard/>
       <Testimonials/>
       <ContactGetInTouch/>
